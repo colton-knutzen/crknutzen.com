@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WDV221 Intro Javascript - Loops</title>
+
+  <script>
+
+
+
+    //1. WHILE loop - add 1 to variable while variable is < 5
+    function question1() {
+      let number = 0; //changed variables from global to local so I can reuse the same variable name multiple times rather than having multiple variables used only once
+      let lineBreak = "";
+
+      while (number < 5) {
+        lineBreak += "<br>" + number; //breaks the numbers on seperate lines
+        number++; //adds one to number variable
+      }
+      document.getElementById("answer1").innerHTML = lineBreak;
+    }
+
+    //2. FOR loop - subtract 1 from variable while variable is > -1
+    function question2() {
+      let lineBreak = "";
+
+      for (let number = 4; number > -1; number--) { //creates variable number and gives it value of 4; runs loop until number > -1; subtracts 1 from number after each run
+        lineBreak += "<br>" + number;
+      }
+      document.getElementById("answer2").innerHTML = lineBreak;
+    }
+
+    //3. WHILE loop - add 1 to variable while variable is < 6
+    function question3() {
+      let number = 1;
+      let lineBreak = "";
+
+      while (number < 6) {
+        lineBreak += "<p>" + number;
+        number++;
+      }
+      document.getElementById("answer3").innerHTML = lineBreak;
+    }
+
+    //4. WHILE loop - add 5 to variable until < 46
+    function question4() {
+      let number = 5;
+      let lineBreak = "";
+
+      while (number < 46) { //has to be 46, because we are increasing by 5. If this was 41, it would stop at 40, which we don't want
+        lineBreak += "<br>" + number;
+        number = number + 5;
+      }
+      document.getElementById("answer4").innerHTML = lineBreak;
+    }
+
+
+    //5. WHILE loop - add 1 to variable until < 7, and tack the number variable at the end of the string to produce a unique option for each
+    function question5() {
+      let number = 1;
+      let option = "";
+
+      while (number < 7) {
+        //option += "<option value='Option" + number "> Option " + number + "</option>"; //I tried to include a unquie value for each option using the number variable, but can't figure it out
+        option += "<option>Option " + number + "</option>";
+        number++;
+      }
+      document.getElementById("select").innerHTML = option;
+    }
+
+
+   // function test() {console.log("success");}
+  </script>
+
+
+</head>
+
+<body>
+  <h1>WDV221 Intro Javascript</h1>
+  <h2>Project-5 Loops Assignment</h2>
+  <hr />
+  <p>Please complete the following exercises on this page. When complete post this page to your server. Make a link in
+    your WDV221 homework page for this assignment. </p>
+  <p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.
+  </p>
+  <p>Using Blackboard submit this Assignment.</p>
+  <hr />
+  <h3>Instructions: </h3>
+  <p>Please complete the following exercises using Javascript loops as indicated. Please place your code on this page.
+    Use runtime scripts unless told otherwise. </p>
+
+  <p>1. Create a WHILE loop that will print out the numbers 0 to 4 each on a seperate line.</p>
+  <p id="answer1"></p>
+  <script>question1(); //runtime script to run question1 function automatically as page loads</script>
+
+
+  <p>2. Create a FOR loop that will print out the numbers 4 to 0 each on a seperate line.</p>
+  <p id="answer2"></p>
+  <script>question2();</script>
+
+
+  <p>3. Create a loop that will print 1 to 5 each in its own paragraph element.</p>
+  <p id="answer3"></p>
+  <script>question3();</script>
+
+  <p>4. Create a loop that will print out the following numbers (5,10,15,20,25...) until one is greater than 40.</p>
+  <p id="answer4"></p>
+  <script>question4();</script>
+
+  <p>5. Create a loop that will print out 6 of the following messages (Option 1, Option 2, Option 3, etc. ) as options
+    within the drop down menu below.</p>
+  <p>
+    <label>Select an Option!
+      <select name="select" id="select">
+      </select>
+    </label>
+    <script>question5();</script>
+  </p>
+
+  <p>&nbsp;</p>
+</body>
+
+</html>

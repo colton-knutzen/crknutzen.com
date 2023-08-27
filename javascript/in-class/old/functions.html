@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+let schoolName ="DMACC"; //scope - global, can be used anywhere. Including inside of functions
+
+//defining a function - creating function
+function outputSchoolName(){
+    //this function will output the School Name to the document object
+    //where is the data coming from for this function? where do we get the data we need?
+    // 1. a global variable on the page
+    // 2. pass the information into the function as a parameter
+    // 3. gather the information needed from the page or input process
+    document.write(schoolName); //output the value to the document object
+}
+
+//call a function:
+// 1. use the function name in a script
+// 2. use an event handler to call the function
+
+outputSchoolName(); //call the function, run the function
+
+//document.write() works as part of the run time scripts. As the page is being rendered.
+//If you use document.write() AFTER the document object is fully rendered, then it will replace the old document object with a new one
+
+function displayMajor() {
+    let studentMajor = "WDV"; //local scope - defined within a function. Variable is ONLY avaliable within the function, and ends when function ends.
+    alert("Student Major: " + studentMajor + "School Name:" + schoolName)
+}
+
+displayMajor();
+
+</script>
+
+
+</head>
+<body>
+    <h1>Unit 4 - Functions</h1>
+    <p>Your school is: <script>outputSchoolName();</script></p>
+
+    <p>
+        <button onclick="outputSchoolName();">Display School</button> <!-- button = element / onclick = attribute. in " " have to be javaScript WITHOUT <script> -->
+    </p>
+
+    <p>
+        <button onclick="displayMajor();">Display Major</button>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>WDV221 Intro Javascript - Unit 4</title>
+
+	<style>
+		span {
+			font-style: italic;
+		}
+	</style>
+
+	<script>
+
+		function htmlMessage() {
+			console.log("Hello - HTML");
+		}
+
+		function javascriptMessage() {
+			console.log("Hello - Javascript");
+		}
+
+		htmlMessage();
+		javascriptMessage();
+
+
+		function pageSetup() {
+			let button2 = document.querySelector("#clickButton");
+
+			button2.onclick = function () {
+				javascriptMessage();
+			}
+		}
+
+
+		function colorChangeOn() {
+			document.getElementById("colorChange").style.color = "red";
+		}
+
+		function colorChangeOff() {
+			document.getElementById("colorChange").style.color = "black";
+		}
+
+
+		function bigImg(x) {
+			x.style.height = "400px";
+			x.style.width = "400px";
+		}
+
+
+		function smallImg(x) {
+			x.style.height = "200px";
+			x.style.width = "200px";
+		}
+
+
+	</script>
+
+</head>
+
+<body onload="pageSetup()">
+	<h1>WDV2221 Intro Javascript</h1>
+	<h2>Unit-5 Assignment - Event Handlers </h2>
+
+	<p>This is an HTML event handler: <button onclick="htmlMessage();">Press Me</button></p>
+
+	<p>This is a javaScript event handler: <button id="clickButton">Press Me Next</button></p>
+
+	<p id="colorChange" onmouseover="colorChangeOn();" onmouseout="colorChangeOff();">Mouse over here to change the
+		color!</p>
+
+	<p><img onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="../homework_page/images/astronaut.jpg"
+			alt="astronaut" width="200px" height="200px"></p>
+
+	<p><select id="proficientSelect" onchange="dropdown()">
+			<option value="HTML">HTML</option>
+			<option value="CSS">CSS</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="PHP">PHP</option>
+		</select></p>
+
+<p id="text"></p>
+
+<script>
+function dropdown() {
+  var x = document.getElementById("proficientSelect").value;
+  document.getElementById("text").innerHTML = "You're proficient in: " + x;
+}
+</script>
+
+
+</body>
+</html>

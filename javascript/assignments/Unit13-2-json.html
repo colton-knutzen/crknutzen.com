@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Book Objects w/o functions
+        let book1 = {
+            bookTitle: "Beginning Javascript",
+            bookPrice: 19.99,
+            bookAuthor: "Smith",
+        }
+
+        let book2 = {
+            bookTitle: "Logic with ES6",
+            bookPrice: 29.49,
+            bookAuthor: "Johson-Parker",
+        }
+
+        let book3 = {
+            bookTitle: "Javascript Objects Made Easy",
+            bookPrice: 999.99,
+            bookAuthor: "Westin",
+        }
+
+        //Converts javaScript objects into JSON objects
+        let book1JSON = JSON.stringify(book1);
+        let book2JSON = JSON.stringify(book2);
+        let book3JSON = JSON.stringify(book3);
+
+        //Display to Console
+        console.log(book1JSON);
+        console.log(book2JSON);
+        console.log(book3JSON);
+
+
+        //Display to page
+        function load() {
+            document.getElementById("book1").innerHTML = book1JSON;
+            document.getElementById("book2").innerHTML = book2JSON;
+            document.getElementById("book3").innerHTML = book3JSON;
+        }
+
+        //Converts the JSON object back into a new javascript object
+        let book1Javascript = JSON.parse(book1JSON);
+        let book2Javascript = JSON.parse(book2JSON);
+        let book3Javascript = JSON.parse(book3JSON);
+
+        //Displays the new javascript object to the console
+        console.log(book1Javascript);
+        console.log(book2Javascript);
+        console.log(book3Javascript);
+
+        //Displays the new javascript object to the document
+        function load2() {
+            document.getElementById("book4").innerHTML = book1JSON;
+            document.getElementById("book5").innerHTML = book2JSON;
+            document.getElementById("book6").innerHTML = book3JSON;
+        }
+    </script>
+
+
+</head>
+
+<body onload="load(); load2()">
+    <h1>13-2: Create & convert JSON Object</h1>
+    <h2>Javascript -> JSON Objects</h2>
+    <p id="book1"></p>
+    <p id="book2"></p>
+    <p id="book3"></p>
+
+    <h2>JSON -> Javascript Objects</h2>
+    <p id="book4"></p>
+    <p id="book5"></p>
+    <p id="book6"></p>
+
+</body>
+
+</html>

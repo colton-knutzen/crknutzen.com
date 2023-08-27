@@ -1,0 +1,71 @@
+/*Add CSS color values to the properties values that are blank. Change the existing color values using a variety of sources. Experiment with using RGB, Hexdecimal, and HSL. Add the drop shadow to the container making sure it has a transparency value in the RGB.*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+body {
+	background-image:url("images/Zk7aPe.jpg")
+}
+	
+#container {
+			width:964px;
+			margin:10px auto;
+			border-radius:25px;
+			background-color:white;
+			border:2px solid black;
+			box-shadow:;
+		}
+		
+		
+header {
+		color:lightblue;
+		background-color:darkblue;
+			text-align:center;
+		padding:0.5em;
+		border-top-left-radius:23px;
+		border-top-right-radius:23px;
+		}
+	
+
+p {
+	line-height:2.0em;}
+	
+/* Add a linear gradient to the background of the main element. */
+
+			
+main  {
+		padding:10px;
+		}
+/* Adjust the opacity of the image. */
+
+img{
+	border: 2pt solid black;
+  	margin: 25px auto;
+  	display: block;
+  	border-radius: 25px;
+	opacity:;
+}
+
+/* Style the button element as you desire. You may also use the button generator. If you DO use a button generator, make sure the selector is consistent with the html. You may have to change the selector from the one generated. */
+
+button {
+	
+}
+
+button:hover
+{
+	
+}
+
+
+footer  {
+		color:white;
+		background-color:black;
+		text-align:center;
+		padding:0.5em;
+		border-bottom-left-radius:23px;
+		border-bottom-right-radius:23px;
+		}
+		

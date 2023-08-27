@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    //you can put script elements within the head or the body
+    //you can have multiple script elements on a page
+    //you CANNOT put a script element within a script element
+
+    console.log("Welcome to the Console");
+    document.write("Welcome to the document.write");
+    alert("Help Me! JavaScript is hard!!"); //window.alert. Window is the object. The alert is a modal aka a popup.
+</script>
+
+</head>
+<body>
+    <h1>WDV221 Intro to JavaScript</h1>
+    <h2>Unit-1 Review and Unit-2 Variables</h2>
+    <p><script>document.write("This was written by JavaScript.");</script></p>
+
+    <script>
+        //you can write ANY element out to the document object using the document.write()
+
+        document.write("<p>This was paragraph 2 written by JavaScript with the <p> tags.");
+    </script>
+
+<p>Welcome: <span></span></p>
+<script>
+//1. find the span obeject in the document object, get access to it
+//2. modify the contents of the object with the new value
+//3. the new value to be placed on the document object
+
+document.querySelector("span").innerHTML = "Mary" //querySelector selects the first. querySelectorAll selects all.
+</script>
+
+<p>Your School: <span id="schoolDisplay"></span></p>
+<script>
+document.getElementById("schoolDisplay").innerHTML = "DMACC";
+
+</script>
+
+</body>
+</html>

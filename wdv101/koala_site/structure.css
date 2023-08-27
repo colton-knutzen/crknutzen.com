@@ -1,0 +1,78 @@
+.container {
+    width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid green;
+    background-color: hsla(221, 39%, 73%, 1);
+}
+
+form {		
+    display: flex;
+    flex-direction: column; 
+    background-color:#BDCFDB;;
+    width:90%;
+    padding:0.5em;
+    margin:1.5em auto;
+    border:thin solid black;
+    border-radius:10px;
+}
+
+
+.flex-form {
+        display: flex;
+        justify-content: center;
+        margin-bottom:0.3em;
+        }
+
+
+
+.flex-form label {
+              text-align: right;
+              flex-basis: 8em;
+              margin-top: 0.5em;
+              margin-right:0.5em;
+          }	
+          
+.flex-form input, select, textarea {
+              flex-basis: 50%;
+              display: flex;
+              justify-content: center;
+              }
+              
+              
+.flex-radio  {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-left:1.8em;
+          margin-top:1.2em;
+          margin-bottom:1.2em;
+          }
+          
+
+          
+.flex-radio  label {
+      margin-right:1.8em;}
+
+.flex-buttons  {
+        display: flex;
+        justify-content: center;
+        }
+
+
+
+textarea {
+height:100px;
+}
+
+fieldset {	display: flex;
+    flex-direction: column;
+    margin:0.5em;
+    padding:0.5em;
+    }
+    
+/* End flex css */			
+
+section  {
+    padding:0.5em;
+    }

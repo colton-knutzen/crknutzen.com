@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>WDV221 Intro JavaScript</h1>
+    <h2>Unit 2 - Variables and Data Types</h2>
+    <script>
+        //a variable is an object. an object is a container that holds data and can be used.
+
+        //1. define a variable and we 2. assign a value
+
+        let firstName; //defines a variable
+        //scope: global = you can use it and see it anywhere on this page. Including within a function
+
+        console.log(firstName);
+
+        let lastName = "Smith"; //define a variable, assign it a value, data type of string
+
+        firstName = "Mary"; //assign a value, data type string
+
+
+    </script>
+    <p>The value of firstName is
+        <script>document.write(firstName);</script>
+    </p>
+    <p>The value of lastName is
+        <script>document.write(lastName);</script>
+    </p>
+    <script>
+        //let firstName = "Jeff"; //define a variable a second time
+        firstName = "Jeff"; //change the value of a variable
+
+
+    </script>
+
+    <p>2. The value of firstName is
+        <script>document.write(firstName);</script>
+    </p>
+    <p>2. The value of lastName is
+        <script>document.write(lastName);</script>
+    </p>
+
+    <script>
+        firstName = 42; //assign a new value of number datatype. The variable does not care what type of datatype is used, even if it's been used for another before. Called "lack of data integrity"
+    </script>
+
+    <p>3. The value of firstName is
+        <script>document.write(firstName);</script>
+    </p>
+    <p>3. The value of lastName is
+        <script>document.write(lastName);</script>
+    </p>
+    <script>
+        firstName = "42"; //string datatype bcause of the quotes
+
+        //' ' or " " creates a String data type, string literal-exactly as written
+    </script>
+
+    <p>4. The value of firstName is
+        <script>document.write(firstName);</script>
+    </p>
+    <p>4. The value of lastName is
+        <script>document.write(lastName);</script>
+    </p>
+
+    <p>5. The value of firstName is
+        <script>document.write("firstName");</script>
+    </p>
+    <p>5. The value of lastName is
+        <script>document.write("lastName");</script>
+    </p>
+    <script>
+//boolean has two values. boolean true and boolean false. boolean variables is a yes/no conditiona/question/flag/switch
+
+        let validForm = true; //boolean variable, boolean data type
+
+console.log(validForm);
+    </script>
+
+    <p>Is the form finished? <script>document.write(validForm);</script></p>
+
+<script>
+// const - defines a variable with a CONSTANT value, cannot change the value
+// often written in all UPPERCASE. Best Practices
+
+const SCHOOLNAME = "Drake"; //constant, global scope, String data type
+
+console.log(SCHOOLNAME);
+</script>
+<p>School Name: <script>document.write(SCHOOLNAME);</script></p>
+<script>
+
+SCHOOLNAME = "UNI";
+console.log(SCHOOLNAME); //VSS won't catch the const, but the browser will not like it
+</script>
+
+
+<script>
+//dynamic pages/content changes with each person, structure remains the same
+
+let name = "";
+let school = "";
+
+</script>
+
+<h2>Unit 2 - Using Variables</h2>
+<h3>Welcome <script>document.write(name);</script>. This is the spring semester.</h3>
+<p>Your new school is <script>document.write(school);</script>.</p>
+
+
+</body>
+
+</html>

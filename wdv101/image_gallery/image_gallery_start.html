@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Gallery Exercise</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    #container {
+      background-color: lightgray;
+      padding: 0.5em;
+      width: 90%;
+      max-width: 1200px;
+      margin: 1.1em auto;
+
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      border: 2px solid black;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    figure {
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.658);
+      margin: 15px;
+    }
+
+    figure img {
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Image Gallery</h1>
+      <p>The img element is an inline element. As such just plain images (without text or figcaptions) will
+        automatically appear alongside each other and wrap when the container gets smaller. This is the nature of inline
+        elements (such as images) and do not require flex or float.</p>
+      <p>In this exercise we will embed the image within the figure element and apply the figcaption element to add a
+        caption to the image. These elements are block elements so we will add flexbox properties so that the gallery
+        will be responsive to varying viewport sizes.</p>
+      <p>The we will modify the layout so that the images appear in three columns when at desktop view.</p>
+    </header>
+
+    <!-- Photo Gallery -->
+
+
+    <div class="gallery">
+      <div class="col">
+        <figure>
+          <img src="images/balloons.jpg" alt="Balloons in the sky">
+          <figcaption>Balloons in the sky</figcaption>
+        </figure>
+        <figure>
+          <img src="images/border_collie.jpg" alt="Dog running in water">
+          <figcaption>Dog running in water</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="images/frog.jpg" alt="yellow frog">
+          <figcaption>Yellow frog</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pepper_cob.jpg" alt="Red pepper cut in half">
+          <figcaption>Red pepper cut in half</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="images/off_road.jpg" alt="Biking in the woods">
+          <figcaption>Biking in the woods</figcaption>
+        </figure>
+        <figure>
+          <img src="images/beagle_puppy.jpg" alt="puppy">
+          <figcaption>Puppy</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!--close container div-->
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let productName = "Red Stapler";
+        // productName is a variable AND an object
+        //because it's a string datatype, any string function can be used on productName, like .length, which will count the number of characters in the string
+
+        function pageSetup() {
+            console.log(document.querySelector("h4").style); //displays the style in the console
+
+            document.querySelector("h4").style.color = 'yellow';
+        }
+
+    </script>
+
+</head>
+<body onLoad="pageSetup()">
+    <p><script>document.write(productName.length);</script></p>
+    <p><script>document.write(productName.toUpperCase());</script></p>
+
+
+    <h4 style="background-color: limegreen;">This paragraph element becomes a p obejct within the document object.</h4>
+
+</body>
+</html>

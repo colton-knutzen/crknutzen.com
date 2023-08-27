@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+form {
+	width: 90%;
+	max-width: 800px;
+	padding: 1.2em;
+	border: thin solid lightgray;
+	border-radius: 10px;
+}
+
+.form-group {
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.form-group label, .label {
+	margin-right: 0.5em;
+	font-weight: 700;
+	flex-basis: 8em;
+}
+
+.form-group input {
+	line-height: 1;
+}
+
+.form-group input, textarea, .form-group select {
+	border-radius: 4px;
+	border: 1px solid gray;
+	padding: 8px;
+	font-size: .875rem;
+	flex: 1;
+}
+
+.form-group select {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 16px 12px;
+	appearance: none;
+	padding-right: 3em;
+}
+
+.form-group select::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.message-label {
+	align-self: flex-start;
+}
+
+.row {
+	margin-bottom: 1em;
+	display: flex;
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+.row input {
+}
+
+.flex-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+textarea {
+	height: 100px;
+}
+
+.intro {
+	color: gray;
+}
+
+input[type=submit], input[type=reset] {
+	background-image: none;
+	border-radius: 4px;
+	border-color: black;
+	box-shadow: none;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+}
+
+input[type=submit] {
+	background-color: #0b5ed7;
+	border-color: #0a58ca;
+	color: #fff;
+}
+
+input[type=reset] {
+	margin-right: 1rem;
+}

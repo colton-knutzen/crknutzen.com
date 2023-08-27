@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="BankAccount.js"></script>
+    <script>
+
+        //John logs into his Bank Account. When he logs in, his information is populated into the class
+        let account1 = new BankAccount(5);
+        account1.accountNumber = 3;
+        account1.accountName = "John";
+        console.log(account1.accountInfo());
+
+        //It's payday so John deposits his paycheck.
+        console.log(account1.deposit(700));
+
+        //After seeing his new balance, John decides to withdraw $300 to pay for expenses for the week.
+        console.log(account1.withdraw(300));
+
+        //Julie logs into her Bank Account
+        let account2 = new BankAccount(10000);
+        account2.accountNumber = 5487;
+        account2.accountName = "Julie";
+        console.log(account2.accountInfo());
+
+        //Julie has no money to deposit, but accidently presses the button
+        console.log(account2.deposit(0));
+
+        //Julie wants to buy a new bag, so she withdraws money
+        console.log(account2.withdraw(750));
+
+
+    </script>
+
+
+</head>
+<body>
+    <h1>WDV221 Intro to JavaScript</h1>
+    <h2>Unit 12-1: Bank Account</h2>
+    <p>Everything is in the console</p>
+ 
+</body>
+</html> 

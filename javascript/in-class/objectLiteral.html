@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //object literal is a fast way to create and populate an object in JavaScript
+        //advantage: fast, quick, no planning required, object to us
+        //disadvatage: no standarization, no carry over to other pages, free form
+
+        const shoeObject =  {
+            shoeSize: 10,
+            shoePrice: 49.99,
+            shoeColor: "black",
+            discountPrice: function() {
+                return this.shoePrice - (this.showPrice * .2);
+            }
+        };
+
+        console.log(shoeObject.shoeSize);
+
+        shoeObject.shoeStyle = "sandal"; //since there isn't a shoeStyle property, we will add it to the end of the list
+
+        console.log(shoeObject);
+
+        shoeObject.shoeSize = 10.5;
+
+        console.log(shoeObject.shoeSize);
+
+    </script>
+
+</head>
+<body>
+    <h1>WDV221 Intro to JavaScript</h1>
+    <p>Unit 13 JavaScript Object Literals</p>
+    
+</body>
+</html>

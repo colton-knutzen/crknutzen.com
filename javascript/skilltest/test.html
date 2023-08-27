@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="product-list"></div>
+
+<script>
+const productList = {
+  "dc-25W": {
+    prod_name: "digital camera",
+    prod_number: "dc-25W",
+    prod_manufacture_price: 14.90,
+    prod_suggestedRetailPrice: function() {
+      return this.prod_manufacture_price * 1.5;
+    }
+  },
+  "h-24 WFSD": {
+    prod_name: "headset with microphone",
+    prod_number: "h-24 WFSD",
+    prod_manufacture_price: 32.87,
+    prod_suggestedRetailPrice: function() {
+      return this.prod_manufacture_price * 1.5;
+    }
+  },
+  "wm-js-usb": {
+    prod_name: "wireless mouse",
+    prod_number: "wm-js-usb",
+    prod_manufacture_price: 6.54,
+    prod_suggestedRetailPrice: function() {
+      return this.prod_manufacture_price * 1.5;
+    }
+  }
+};
+
+const productListElement = document.getElementById("product-list");
+let productListHTML = "";
+
+for (let i = 0; i < Object.keys(productList).length; i++) {
+  const product = productList[Object.keys(productList)[i]];
+  
+  productListHTML += "<div>";
+  productListHTML += "<h2>" + product.prod_name + "</h2>";
+  productListHTML += "<p>Product Number: " + product.prod_number + "</p>";
+  productListHTML += "<p>Manufacture Price: $" + product.prod_manufacture_price.toFixed(2) + "</p>";
+  productListHTML += "<p>Suggested Retail Price: $" + product.prod_suggestedRetailPrice().toFixed(2) + "</p>";
+  productListHTML += "</div>";
+}
+
+productListElement.innerHTML = productListHTML;
+</script>
+
+
+</body>
+</html>

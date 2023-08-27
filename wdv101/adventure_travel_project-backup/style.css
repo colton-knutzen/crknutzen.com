@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Adventures";
+    src: url("font/ADVENTURES.ttf") format("truetype");
+}
+
+.title {
+    font-family: "Adventures";
+    font-size: 100px;
+    text-shadow: 2px 2px rgb(65, 65, 65);
+}
+
+body {
+    background-color: lightgray;
+}
+
+nav {
+height: 100%;
+width: 116px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+overflow-x: hidden;
+background-color: white;
+}
+
+.b-example-divider {
+    background-color: rgba(0, 204, 255, 0.151);
+}
+
+header {
+    margin-left: 116px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    margin-left: 116px;
+}
+
+footer {
+    margin-left: 116px;
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Adventures";
+    text-shadow: 2px 2px rgb(65, 65, 65);
+}
+
+.carousel {
+    width: 50%;
+    margin: auto;
+}
+
+.destination-container {
+    overflow: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.destination-img img {
+    margin-right: 100px;
+}
+
+.faq-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.form-container {
+    border: 1px black solid;
+    border-radius: 25px;
+    padding: 20px 40px;
+}

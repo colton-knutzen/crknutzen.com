@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Auto Layout</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="gallery_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <h1>Image Gallery</h1>
+            <p>I this example we will use bootstrap properties to create an image gallery. Images and the following text are
+              placed inside a div.</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- A horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="dmacc.edu">DMACC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Add a bootstrap container class.-->
+  <div class="container">
+ 
+    <!-- Add a div class of row-->
+    <div class="row">
+    <!-- Add a div class of col Bootstrap will automatically stack the columns when the viewport gets smaller.-->
+      <div class="col">
+          <!-- Nest the image in a div, then add text after the image-->
+          <figure><img src="images/balloons.jpg">
+            <figcaption>Balloons</figcaption>
+          </figure>
+      </div>
+      <div class="col">
+          <figure><img src="images/border_collie.jpg">
+            <figcaption>border-collie</figcaption>
+          </figure>
+      </div>
+      <div class="col">
+          <!--Add a Bootstrap Modal with a link wrapped around the figure, this will be deomonstrated in class-->
+          <figure><img src="images/frog.jpg">
+            <figcaption>frog</figcaption>
+          </figure>
+      </div>
+    </div>
+    <!--close row div-->
+    <!-- Add a div class of row-->
+    <div class="row">
+      <!-- Add a div class of col Bootstrap will automatically stack the columns when the viewport gets smaller.-->
+      <div class="col">
+        <figure><img src="images/pepper_cob.jpg">
+          <figcaption>pepper and corn</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure><img src="images/off_road.jpg">
+          <figcaption>off-road cycling</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure><img src="images/beagle_puppy.jpg">
+          <figcaption>beagle puppu</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--close row div-->
+    <!-- Add a div class of row-->
+    <div class="row">
+      <!-- Add a div class of col Bootstrap will automatically stack the columns when the viewport gets smaller.-->
+      <div class="col">
+        <figure><img src="images/flower.jpg">
+          <figcaption>Flower</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure><img src="images/seedling.jpg">
+          <figcaption>Seedling</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure><img src="images/mountain.jpg">
+          <figcaption>Mountain</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--close row div-->
+  </div>
+<!--close container div-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gallery: Koala Bear National Information Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="In this site you can learn about Koala bears, adopt a Koala, give to our foundation.">
+    <meta name="keyword" content="Koala, conservation, research">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="structure.css">
+    <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    figure {
+      background-color: pink;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px 10px 0px 0px;
+      box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.658);
+      margin: 15px;
+    }
+
+    figure img {
+        border-radius: 10px 10px 0px 0px;
+      border: 1px solid black;
+    }
+
+    figcaption {
+      font-weight: bold; 
+      font-size: 15px;
+      text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        figure {
+            background-color:blueviolet;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Gallery of Koala</h1>
+            <img src="images/koala_banner.jpg" alt="Koala Banner">
+        </header>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="koala_home.html">Koala Home</a></li>
+                    <li><a href="save_koalas.html">Save Koalas!</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h2><strong>On this page, you can look at cute pictures of Koalas!</strong></h2>
+
+            <div class="gallery">
+                <div class="col">
+                    <figure>
+                        <img src="images/koala_gallery/ella.jpg" alt="Koala sleeping in ball-shape in a tree">
+                        <figcaption>Ella</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/grant.jpg" alt="Koala holding on twigs">
+                        <figcaption>Grant</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/jams.jpg" alt="Koala giving you the dirty eye">
+                        <figcaption>Jams</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure>
+                        <img src="images/koala_gallery/jilley_and_baby.jpg" alt="Momma Koala with baby holding back">
+                        <figcaption>Jilley & Baby</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/koala_c.jpg" alt="Half asleep koala on branch">
+                        <figcaption>Koala C</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/lucy.jpg" alt="Koala playing in sand on beach">
+                        <figcaption>Lucy</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure>
+                        <img src="images/koala_gallery/miffy.jpg" alt="Smiling koala hugging tree">
+                        <figcaption>Miffy</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/niley.jpg" alt="Big boy koala">
+                        <figcaption>Niley</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/koala_gallery/nooka_and_baby.jpg" alt="Koala hugging her baby">
+                        <figcaption>Nooka & Baby</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+        <footer>
+            <p><img src="images/koala_logo.svg" alt="Koala Icon" width="100" height="100"> 2018 All rights reserved.
+                Australian Koala Foundation</p>
+        </footer>
+    </div>
+</body>
+
+</html>

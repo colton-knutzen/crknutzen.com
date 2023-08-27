@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Student.js"></script>
+    <script>
+
+        let newStudentObject = new Student();
+        console.log(newStudentObject); //test
+
+        newStudentObject.studentName = "Mary Smith";
+        newStudentObject.studentEmail = "e.smith@mail.com";
+
+        console.log(newStudentObject);
+
+        studentObject2 = new Student("Mark Leaver");
+
+        console.log(studentObject2);
+        console.log(studentObject2.studentName);
+
+        let studentObject3 = new Student();
+        studentObject3.setStudentName("Mike Brown");
+        studentObject3.studentEmail = "mike.brown@gmail.com";
+        console.log(studentObject3.getStudentName());
+        console.log(studentObject3.displayStudentInfo());
+
+    </script>
+</head>
+<body>
+    <h1>WDV221 Intro JavaScript</h1>
+    <h2>OOP JavaScript Student Class</h2>
+</body>
+</html>

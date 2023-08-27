@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/adv-css/capstone/resources/css/template-style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/adv-css/capstone/resources/js/javascript.js"></script>
+
+    <title>Character - TEMPLATE PAGE</title>
+    <meta name="keywords" content="TEMPLATE">
+    <meta name="description" content="TEMPLATE">
+    <style>
+        /*Page Color Theme Start*/
+        #colorTheme {
+            background-color: #A0D7E4;
+        }
+
+        h3 {
+            border-bottom: 1px solid #A0D7E4;
+        }
+
+        /*Page Color Theme End*/
+    </style>
+
+</head>
+
+<body onload="tocLoad(); socializerLoad()">
+    <div class="grid-container">
+        <!--Header Start-->
+        <div id="inc-header"></div>
+        <script>$(function () { $("#inc-header").load("/adv-css/capstone/resources/js-inc/header.html") });</script>
+        <!--Header End-->
+        <!--Top Nav Start-->
+        <div id="inc-top-nav"></div>
+        <script>$(function () { $("#inc-top-nav").load("/adv-css/capstone/resources/js-inc/top-nav.html") });</script>
+        <!--Top Nav End-->
+        <!--Side Nav Start-->
+        <div id="inc-side-nav"></div>
+        <script>$(function () { $("#inc-side-nav").load("/adv-css/capstone/resources/js-inc/side-nav.html") });</script>
+        <!--Side Nav End-->
+        <!--Left Ad Start-->
+        <div id="inc-left-ad"></div>
+        <script>$(function () { $("#inc-left-ad").load("/adv-css/capstone/resources/js-inc/left-ad.html") });</script>
+        <!--Left Ad End-->
+        <!--Content Area Start-->
+        <main onclick="hideSideNav()">
+            <!--Content Ad Head Start-->
+            <div class="content-ad">
+                <img class="ad-img" src="/adv-css/capstone/resources/img/ad1.png" alt="top of page ad">
+            </div>
+            <!--Content Ad Head End-->
+
+            <!--Content Div Start-->
+            <div class="main-content-div">
+
+                <!--Content Header Start-->
+                <div class="content-header">
+
+                    <!--Page Title Start-->
+                    <div class="page-title">
+                        <!--Title Here-->
+                        <h1>CHARACTER NAME</h1>
+                        <!--Text Here-->
+                        CHARACTER SYNOPSIS
+                    </div>
+                    <!--Page Title End-->
+
+                    <!--InfoBox Start-->
+                    <div class="info-box">
+                        <!--Header Table Start-->
+                        <table class="table1-info">
+                            <tr>
+                                <td class="info-box-title" id="colorTheme" id="colorTheme">CHRACTER NAME</td>
+                            </tr>
+                            <tr>
+                                <td class="info-box-category">CONSTELLATION</td>
+                            </tr>
+                            <tr>
+                                <td class="info-box-img"><img src="/adv-css/capstone/resources/img/pexels-amanda-kerr-90597.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <!--Header Table End-->
+
+                        <!--Content Table Start-->
+                        <table class="table2-info">
+                            <!--Copy Start New Row-->
+                            <tr>
+                                <td class="info-box-label">Rarity</td>
+                                <td class="info-box-value">VALUE</td>
+                            </tr>
+                            <!--Copy End New Row-->
+                            <!--Copy Start New Row-->
+                            <tr>
+                                <td class="info-box-label">Element</td>
+                                <td class="info-box-value">VALUE</td>
+                            </tr>
+                            <!--Copy End New Row-->
+                            <!--Copy Start New Row-->
+                            <tr>
+                                <td class="info-box-label">Weapon</td>
+                                <td class="info-box-value">VALUE</td>
+                            </tr>
+                            <!--Copy End New Row-->
+                            <!--Copy Start New Row-->
+                            <tr>
+                                <td class="info-box-label">Birthday</td>
+                                <td class="info-box-value">VALUE</td>
+                            </tr>
+                            <!--Copy End New Row-->
+                        </table>
+                        <!--Content Table End-->
+
+                        <!--Share Table Start-->
+                        <table class="table3-info">
+                            <tr>
+                                <td class="share-label"><img src="/adv-css/capstone/resources/img/icon/share.png" alt="share button">
+                                    Share</td>
+                                <td class="share-value">
+                                    <div class="socializer" data-features="32px,opacity,icon-dark,bg-none,pad"
+                                        data-sites="facebook,twitter,reddit,email"></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--Share Table End-->
+                    </div>
+                    <!--InfoBox End-->
+
+                    <!--Table of Content Start-->
+                    <div class="table-of-content">
+                        <table class="table1-table" id="colorTheme" id="colorTheme">
+                            <tr>
+                                <td class="toc-title">Table of Content</td>
+                                <td class="toc-arrow"><img src="/adv-css/capstone/resources/img/icon/table-arrow.png" alt=""
+                                        onclick="tocDropdown()" class="toc-arrow"></td>
+                            </tr>
+                        </table>
+                        <div id="toc-dropdown" class="toc-dropdown-content">
+                        </div>
+                    </div>
+                    <!--Table of Content End-->
+                </div>
+                <!--Content Header End-->
+
+                <!--Parallelogram Title Start-->
+                <div class="parallelogram-title" id="colorTheme" id="colorTheme">
+                    <h2>Materials</h2>
+                </div>
+                <!--Text Here-->
+                <!--Parallelogram Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Common Drop</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Local Speciality</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Talent Book</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Normal Boss</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Weekly Boss</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Parallelogram Title Start-->
+                <div class="parallelogram-title" id="colorTheme">
+                    <h2>Talents</h2>
+                </div>
+                <!--Text Here-->
+                <!--Parallelogram Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Normal Attack</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Skill</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Press</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Hold</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Burst</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Passive Talents</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Utility Passive</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>1st Ascension Passive</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>4th Ascension Passive</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Constellation</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 1</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 2</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 3</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 4</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 5</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                            <!--Sub Article Start-->
+                            <div class="sub-article">
+                                <!--Title Here-->
+                                <h4>Constellation 6</h4>
+                                <!--Text Here-->
+                                SUB ARTICLE CONTENT
+                            </div>
+                            <!--Sub Article End-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Parallelogram Title Start-->
+                <div class="parallelogram-title" id="colorTheme">
+                    <h2>Weapons</h2>
+                </div>
+                <!--Text Here-->
+                <!--Parallelogram Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Weapon</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Weapon</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Weapon</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Parallelogram Title Start-->
+                <div class="parallelogram-title" id="colorTheme">
+                    <h2>Teammates</h2>
+                </div>
+                <!--Text Here-->
+                <!--Parallelogram Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Teammate</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Teammate</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+                <!--Line Title Start-->
+                <div class="article">
+                    <!--Title Here-->
+                    <h3>Teammate</h3>
+                    <div class="content-article">
+                        <div class="h3-block" id="colorTheme"></div>
+                        <div class="content-text">
+                            <!--Text Here-->
+                            ARTICLE CONTENT
+                            <!--Paste Sub Article Here-->
+                            <!--Sub Article Start-->
+                        </div>
+                    </div>
+                </div>
+                <!--Line Title End-->
+
+
+            </div>
+            <!--Content Div End-->
+            <!--Content Ad Tail Start-->
+            <div class="content-ad">
+                <img class="ad-img" src="/adv-css/capstone/resources/img/ad2.jpg" alt="end of page ad">
+            </div>
+            <!--Content Ad Tail End-->
+        </main>
+        <!--Content Area End-->
+        <!--Right Ad Start-->
+        <div id="inc-right-ad"></div>
+        <script>$(function () { $("#inc-right-ad").load("/adv-css/capstone/resources/js-inc/right-ad.html") });</script>
+        <!--Right Ad End-->
+        <!--Footer Start-->
+        <div id="inc-footer"></div>
+        <script>$(function () { $("#inc-footer").load("/adv-css/capstone/resources/js-inc/footer.html") });</script>
+        <!--Footer End-->
+    </div>
+</body>
+
+</html>

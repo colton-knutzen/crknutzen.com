@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Large Image Gallery</title>
+
+<!-- The following HTML command is required when using CSS Media Queries.
+     It tells the browser to look at the screen width of the Device not the browser. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type = "text/css">
+
+	.image-gallery { 
+		width:1030px; 
+		margin: 0 auto;
+		padding: 5px;
+		border:2px solid navy;
+		background-color:#C3BEBE;
+	}
+	
+	img  {
+		   margin: 5px;
+		   border:1px solid black;
+	}
+	
+	h4  {
+			text-align: center;
+	}
+	
+
+	
+	/*
+		The following CSS code is used to process the Responsive portion of the page using a CSS Media Query. 
+		The @media rule will activate when the page size goes less than 500px wide.
+		The CSS rules within the @media command will then be processed. Resizing the display area.
+		When the page is enlarged beyond 500px wide the original CSS will will be restored.
+		
+		NOTE: This technique still requires the download of both the large and the small image to the 
+		mobile device. The example demonstrates how a CSS Media query can be used to modify the presentation
+		of the page. Other Media Query techniques are recommended for Responsive Design efficiency.
+	*/
+	
+	.mobileSize	{
+		display:none;
+	}	
+	
+	@media only screen and (max-width:500px) {
+		.image-gallery	{
+			width:230px;
+			margin:auto;	
+		}
+		
+		.desktopSize {
+			display:none;
+		}
+		
+		.mobileSize {
+			display:inline;	
+		}
+	}
+
+</style>
+
+</head>
+
+<body>
+<h4>Below is an image gallery.</h4>
+
+<!-- In this exercise you optimized images two different sizes - one at 500 pixesl and one at 100 pixels. 
+In the lines of text below place the name of the optimized images in the appropriate size. The first line is an example.-->
+<div class="image-gallery">
+    
+    <img class="desktopSize" src="images_500/cliff.jpg" alt="">
+    <img class="mobileSize" src="images_100/cliff.jpg" alt="">
+
+    <img class="desktopSize" src="images_500/desert.jpg"  alt="">
+    <img class="mobileSize" src="images_100/desert.jpg"  alt="">
+    
+    <img class="desktopSize" src="images_500/forest.jpg" alt="">
+    <img class="mobileSize" src="images_100/forest.jpg"  alt="">
+    
+    <img class="desktopSize" src="images_500/steam.jpg" alt="">
+    <img class="mobileSize" src="images_100/steam.jpg" alt="">
+    
+    <img class="desktopSize" src="images_500/storm.jpg"  alt="">
+    <img class="mobileSize" src="images_100/storm.jpg" alt="">   
+    
+    <img class="desktopSize" src="images_500/village.jpg" alt="">
+    <img class="mobileSize" src="images_100/village.jpg" alt="">    
+    
+    <img class="desktopSize" src="images_500/windmill.jpg" alt="">
+    <img class="mobileSize" src="images_100/windmill.jpg" alt="">    
+    
+    
+</div>
+
+</body>
+</html>

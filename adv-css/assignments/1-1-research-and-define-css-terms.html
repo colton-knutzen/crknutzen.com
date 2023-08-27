@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-1: Research and Define CSS Terms</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            width: 750px;
+            padding: 10px 25px;
+            margin: 0 auto;
+            border: 1px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>1-1: Research and Define CSS Terms</h1>
+    </header>
+
+    <article>
+        <p>
+        <h2>Specificity</h2>
+        </p>
+        <p>
+            Specificity happens when two or more CSS rules Select the same element, and those two rules must 'fight'
+            each other to determine which rule wins and is rendered by the DOM. There is a class and point ranking
+            system that happens in the background to determin the winner. Ranking from highest to lowest score there is:
+            Inline styles, IDs, Classes, pseudo-classes, & attribute seletors, and Elements & pseudo-elements.
+        </p>
+
+        <p>
+        <h2>Precedence</h2>
+        </p>
+        <p>
+            Precedence acts as a tie breaker when Specificity has the same ranking. Precedence states the winner is
+            whichever conflicting rule is closest to the element.
+        </p>
+
+        <p>
+        <h2>Inheritance</h2>
+        </p>
+
+        <p>
+            Inheritance happens when a child element Inherits a CSS rule from the parent. This page for example, I've
+            given the body element a background of cadetblue, but I'm writing my answers in an Article element. Because
+            I haven't given the article element a conflicting rule, it inherits the cadetblue background from the body.
+        </p>
+
+        <p>
+        <h2>Property</h2>
+        </p>
+        <p>
+            A property is what assigns a style or behvaior to an HTML element. The property 'background-color' is
+            assigned to the body of the page and tells the browers that a color change has been requested.
+        </p>
+
+        <p>
+        <h2>Value</h2>
+        </p>
+        <p>
+            Value is the piece that immediatly follows the Property. In the example of background-color, the value is
+            cadetblue telling the browers the exact value, or color in this case, it's supposed to display.
+        </p>
+
+
+        <p>
+        <h2>Selector</h2>
+        </p>
+        <p>
+            A selector is exactly what it sounds like; it selects. It is the first piece of CSS. It's the target. It
+            tells the browers exactly what element the following property and value is supposed to effect.
+        </p>
+    </article>
+
+    <footer>
+        <a href="../homework_page/wdv205_homework_page.html">Return to Homework Page</a>
+    </footer>
+
+</body>
+
+</html>

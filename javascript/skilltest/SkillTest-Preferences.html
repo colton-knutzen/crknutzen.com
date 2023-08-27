@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV221 Intro Javascript - Skill Test Preferences</title>
+<style>
+
+	#container {
+		width:1028px;
+		margin:auto;
+	}
+	
+	ul	{
+		list-style:none;	
+	}
+</style>
+
+<script>
+
+  //1.1 Change background color with onclick event 
+  function changeRed(){
+    //alert("work");
+    document.querySelector("body").style.backgroundColor = "red";
+  }
+  function changeGreen(){
+    document.querySelector("body").style.backgroundColor = "green";
+  }
+  function changeBlue(){
+    document.querySelector("body").style.backgroundColor = "blue";
+  }
+
+
+  //1.2 Using given function to change background color. Color is passed in as string parameter
+	function changeColor(inColor) {
+		document.querySelector("body").style.backgroundColor = inColor;	
+	}
+
+  //2.1 pageFonts array creation
+  const pageFonts = ['Calibri', 'Arial', 'Georgia']
+  //Tried using Times New Roman, but somehow the value or array only recieved Times portion. Will have to look into this further.
+
+  //2.2 Run time function that loads the pageFonts array into the selection
+  function loadFonts() {
+    for (let i = 0; i < pageFonts.length; i++) {
+      document.write("<option value=" + pageFonts[i] + ">" + pageFonts[i] + "</option>");
+    }
+  }
+
+  //2.3 accepts the value of the font and applies it to the body as a font family
+  function changeFont(font) {
+    document.querySelector("body").style.fontFamily = font;	
+  }
+  
+
+	
+
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<header>
+   		<h1>WDV221 Intro Javascript</h1>
+    	<h2>Skill Test - Setting Preferences</h2>
+    </header>
+    
+
+    <section>
+    	<h3>Instructions: Change background colors:</h3>
+        <ol>
+          <li>Modify the page as needed to change the background color when a different color is selected.</li>
+          <ul>Choose your background color:
+            <li>
+                <input type="radio" name="radio" id="radio" value="radio" onclick="changeRed()">
+                <label for="radio">Red</label>
+            </li>
+            <li>
+                <input type="radio" name="radio3" id="radio3" value="radio3" onclick="changeGreen()">
+                <label for="radio3">Green </label>
+            </li>
+            <li>
+                <input type="radio" name="radio2" id="radio2" value="radio2" onclick="changeBlue()">
+                <label for="radio2">Blue</label>
+            </li>
+        </ul>
+
+          <li>Use the changeColor( ) function to change the background color when a button is selected.</li>
+        </ol>
+    
+        <ul>Choose your background color:
+            <li>
+                <input type="radio" name="radio" id="radio" value="radio" onclick="changeColor('Red')">
+                <label for="radio">Red</label>
+            </li>
+            <li>
+                <input type="radio" name="radio3" id="radio3" value="radio3" onclick="changeColor('Green')">
+                <label for="radio3">Green </label>
+            </li>
+            <li>
+                <input type="radio" name="radio2" id="radio2" value="radio2" onclick="changeColor('Blue')">
+                <label for="radio2">Blue</label>
+            </li>
+        </ul>
+ 	<section>
+
+	<section>
+    	<h3>Instructions: Change font selection:</h3>    
+        <ol>
+          <li>Create an array called pageFonts that contains at least three fonts.</li>
+          <li>Use javascript to populate a drop down list of available fonts.</li>
+          <li>Create a function that will allow the user to select the font of their choice. Once selected, all text on the page will change to the selected font.    </li>
+        </ol> 
+        <p>
+        <select name="pageFonts" id="fontDropdown" onchange="changeFont(value)">
+          <option>Choose your font:</option>
+          <script>loadFonts();</script>
+        </select>
+        </p>
+    </section>
+
+</div>
+</body>
+</html>

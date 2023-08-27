@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WDV205 Advanced CSS Flex Layout</title>
+  <link href="scss/5-1-flexbox.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div id="flex-container">
+
+    <header>
+      <img src="images/headerImage.png">
+      <h1>WebAppCo</h1>
+    </header>
+
+    <nav>
+      <h1>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>LANGUAGES</li>
+          <a href="scss/5-1-flexbox.scss">SCSS Link</a>
+        </ul>
+      </h1>
+
+    </nav>
+
+    <div id="middle-container">
+      <!--Middle section contains both columns. Create an id for this section with a flex-direction of row.-->
+
+      <div id="left-column"><!-- left hand column -->
+
+        <p><img src="images/wdvLarge.png" alt="web development"></p>
+
+        <img src="images/html5.png" alt="software">
+        <img src="images/css3.png" alt="software">
+        <img src="images/javascript.png" alt="software">
+        <img src="images/jquery.png" alt="software">
+        <img src="images/php.jpg" alt="software">
+        <img src="images/mysql.jpg" alt="software">
+        <img src="images/wordpress.jpg" alt="software">
+
+      </div><!-- end of left hand column -->
+
+      <div id="right-column"><!-- right hand column -->
+        <div id="top-text">
+          <h3>Web Development describes a set of skills that includes web design, creating web pages and implementing
+            server side functionality.</h3>
+          <!-- Paragraph text below should be in two columns -->
+          <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+            corporate strategy foster collaborative thinking to further the overall value proposition.
+          </p>
+          <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+            forward, a new normal that has evolved from generation X is on
+            the runway heading towards a streamlined cloud solution.
+          </p>
+          <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key
+            performance indicators offline to maximise the long tail.
+            Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on
+            cross-platform integration.
+          </p>
+          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
+            users after installed base benefits.
+          </p>
+        </div>
+
+        <form>
+          <h2>CONTACT US</h2>
+          <p>
+            <label for="Name">NAME</label>
+            <input type="text" name="Name" id="Name">
+          </p>
+          <p>
+            <label for="Email">EMAIL</label>
+            <input type="text" name="Email" id="Email">
+          </p>
+          <p>
+            <label for="Message">MESSAGE</label>
+            <textarea name="Message" id="Message"></textarea>
+          </p>
+          <p id="buttons">
+            <input type="submit" name="button" id="button" value="SUBMIT">
+            <input type="reset" name="button2" id="button2" value="RESET">
+          </p>
+        </form>
+      </div><!-- end of right hand column -->
+    </div><!-- end of middle section -->
+
+    <footer>
+      <h1>FOOTER
+        <img src="images/instagram.jpg" alt="social media instagram">
+        <img src="images/twitter.png" alt="social media twitter">
+        <img src="images/facebook.png" alt="social media facebook">
+      </h1>
+    </footer>
+
+  </div><!-- end of container -->
+</body>
+
+</html>

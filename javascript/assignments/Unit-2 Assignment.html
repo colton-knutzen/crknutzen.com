@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV221 Intro Javascript - Variables and Data Types Assignment</title>
+
+<style>
+
+body {background-color:#FC6;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+</style>
+
+<script>
+
+let schoolName; //1. defines the variable schoolName, but doesn't have a value
+console.log(schoolName); //1. displays variable in console, but since there is no value it's undefined
+
+schoolName = "DMACC"; //2. DMACC has been assigned as the value for schoolName. This is a string data type
+console.log(schoolName); //2. schoolName shows in the console now as the value of DMACC
+
+schoolName = 42; //3. schoolName has been changed to the value of 42. This is a number data type
+console.log(schoolName); //3. schoolName now shows in the console as the value of 42
+
+let courseName = ("WDV221 Intro to Javascript"); //4. courseName has been defined with a string value
+
+let testScore = (100.00); //5. testScore has been assigned a number value
+console.log(testScore); //5. testScore value has been output to the console
+
+let courseGrade = (88.65); //6. courseGrade has been assigned a number value
+console.log(courseGrade); //6. courseGrade value has been output to the console
+
+
+let courseCompleted = (false); //7. courseCompleted has been assigned a false value as a boolean data type
+console.log(courseCompleted); //7. the boolean courseCompleted has been output to the console
+
+courseCompleted = ("false"); //8. courseCompleted had it's value changed to "false" as a string data type
+console.log(courseCompleted); //8. courseCompleted has been output to the console as a string data type
+
+let stringType = ("Java is not the same as javaScript") //9. stringType has been defined with a string data type
+console.log(stringType); //9. stringType has been output to the console
+
+let numberType = (1,000,000) //10. numberType has been assigned with a number data type. Curious to how these data types handle , . It viewed it as a 0.
+console.log(numberType); //10. numberType has been output to the console
+
+//let numberType2 = (1.000.000) //Extra. numberType has been assigned with a number data type. Curious to how these data types handle . since some of the world uses . instead of , to break up large numbers. Commenting this out because it actually broke all the other javaScript. This raises the question, how is coding in other languages? Is it universally in english with the same westerns stypes of writing?
+//console.log(numberTyp2e); //Extra. numberType has been output to the console
+</script>
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Unit-2 - Variables Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment.</p>
+<p>Submt this assignment on Blackboard. Please include a link to your homework page.</p>
+<h3>For each exercise use a comment line to put the Exercise number within the script. Also place a short description of what the script is doing.</h3>
+<hr />
+	<script>
+		
+	</script>
+	<p>Hello! Welcome to <em><script>document.write(courseName);</script></em>.</p> <!--courseName has turned into javaScript, and thus outputs the value of courseName definded above-->
+
+</body>
+
+<footer>
+	<a href="../homework_page/wdv221_homework_page.html">Return to Homework Page</a>
+  </footer>
+</html>

@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    width: 75%;
+    padding: 5px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+}
+
+nav {
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+nav ul {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+nav ul li {
+    list-style-type: none;
+    width: auto;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+main {
+    width: 75%;
+    padding: 15px 15px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+article {
+    display: flex;
+}
+
+footer {
+    width: 75%;
+    padding: 15px 15px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mountains {
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.culture {
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.defense {
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+}

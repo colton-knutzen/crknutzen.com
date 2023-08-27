@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript</title>
+
+
+<script>
+/*
+1. get Name 1 from document object
+2. get Name 2 from document object
+3. compare the two together
+4. if =equal then document.write("Same").innerHTML
+5. if =not-equal then document.write("Different").innerHTML 
+*/
+
+
+
+function compareNames() { //1.
+  let name1 = document.querySelector("#value1").value;
+  //console.log(name1);
+  let name2 = document.querySelector("#value2").value; //2. these two scripts pull the string value out of the text box and stores it in the respective variable
+  //console.log(name2);
+
+  name1 = name1.toUpperCase();
+  //console.log(name1);
+  name2 = name2.toUpperCase(); //3. these two scripts convert the letters stored in name1 & name2 to overcome case sensitive
+  //console.log(name2);
+
+  
+  if (name1 == name2) { //4. this compares name1 and name2
+    document.querySelector("#results").innerHTML = "Same"; //and if same, will user .innerHTML to display Same
+  }
+  else{
+    document.querySelector("#results").innerHTML = "Different"; //if anything other than the same value, it will display Different
+  }
+}
+
+function resetAll() { //6. Curuios, that naming this function reset DO NOT WORK. Any other function name works just find. Tripped me up for quite awhile
+  document.querySelector("#results").innerHTML = ""; //this changes the result innerHTML to blank
+  document.querySelector("#value1").value = "";
+  document.querySelector("#value2").value = ""; //these change the values of value1 & value2 to blank
+}
+
+</script>
+
+
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Comparison and IF Statements - Compare Names Assignment </h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<form id="form1" name="form1" method="post" action="#">
+  <p>Name 1: 
+    <input type="text" name="value1" id="value1" />
+  </p>
+  <p>Name 2: 
+    <input type="text" name="value2" id="value2" />
+  </p>
+  <p>Result: <span id="results" ></span></p>
+  <p><input type="button" value="Compare Names" onclick="compareNames()";/>
+  </p>
+  <p>
+    <input type="button" name="Reset" id="button" value="Reset" onclick="resetAll()"; />
+  </p>
+</form>
+
+<h3>Instructions:</h3>
+<ol>
+  <li>Create a function called compareNames( ).</li>
+  <li>The function will compare the two input values from the form above.</li>
+  <li>The comparison should be case insensitive.</li>
+  <li>The results should display &quot;Same&quot; or &quot;Different&quot;.</li>
+  <li>Use a span element and its .innerHTML property to display the results.</li>
+  <li>Provide a reset function that will reset the form and results.</li></ol>
+</body>
+</html>

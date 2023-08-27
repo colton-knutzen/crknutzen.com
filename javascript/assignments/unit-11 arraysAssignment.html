@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WDV221 Intro Javascript - Arrays</title>
+
+  <style>
+    form {
+      border: thin solid gray;
+      width: 400px;
+      background-color: #9FF;
+      margin-left: 50px;
+    }
+
+    form p {
+      padding-left: 5px;
+    }
+  </style>
+  <script>
+
+
+    //1. 
+    const states = ['Iowa', 'Illinois', 'Missouri', 'Wisconsin'];
+    //console.log(states);
+
+    //2.
+    const stateSalesTax = ['6%', '11%', '7%', '8%'];
+    //console.log(stateSalesTax);
+
+
+    //3. 
+    function loadStates() { //function is a runtime script, writing the states into the html as options right after it loads the <select>
+      //document.write("<option>Test</option>");
+      for (let i = 0; i < states.length; i++) { //keeps looping until i = length of array.
+        document.write("<option value='" + states[i] + "'>" + states[i] + "</option>"); //writes an <option> for each state in the array, as well as give it a value to be used later
+      }
+    }
+
+    //4-6.
+    function salesTaxLookup(state) { //runs with the onchange event handler, and catchs the value in the state variable
+      let stateIndex = states.indexOf(state); //In the states array, finds the index # that's equal to the string stored in the variable state, and stores that index # in stateIndex
+      let taxRate = stateSalesTax[stateIndex]; //In the tax array, uses the index # to find the string data and stores it in taxRate variable
+      document.getElementById('displayTaxRate').innerHTML = taxRate; //displays the taxRate variable to the document
+    }
+
+    //reset button
+    function resetButton() {
+      document.getElementById('displayTaxRate').innerHTML = ''; //adds an additional function to the reset button to clear the displayTaxRate span
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1>WDV221 Intro Javascript</h1>
+  <h2>Project 6 Arrays Assignment</h2>
+  <hr />
+  <p>Please complete the following exercises on this page. When complete post this page to your server. Make a link in
+    your WDV221 homework page for this assignment. </p>
+  <p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.
+  </p>
+  <p>Using Blackboard submit this Assignment.</p>
+  <hr />
+  <h3>Lookup Tax Rate Form</h3>
+  <p>This form will use arrays to load the values into the drop down list. It will allow the user to select a state from
+    the dropdown list. Once it is selected the tax rate for that state will be dislayed on the form.</p>
+  <form id="form1" name="form1" method="post" action="post">
+    <p>Please select a state:
+      <select name="selectState" id="selectState" onchange="salesTaxLookup(value)">
+        <option>Please select a state</option>
+        <script>loadStates();</script>
+      </select>
+
+    </p>
+    <p>The Sales tax rate is: <span id="displayTaxRate"></span> </p>
+    <p>
+      <input type="reset" name="button2" id="button2" value="Reset" onclick="resetButton()" />
+    </p>
+  </form>
+  <h3>Instructions:</h3>
+  <ol>
+    <li>Create an array called states that lists the following states in this order: Iowa, Illinois, Missouri, Wisconsin
+    </li>
+    <li>Create a parallel array called stateSalesTax that lists the following values in this order: 6%,11%,7%,8%. </li>
+    <li>Use Javascript to dynamically load the list of states into the drop down menu. </li>
+    <li>Create a function called salesTaxLookup( ).</li>
+    <li>Use the onchange event handler on the select element to run salesTaxLookup( )</li>
+    <li>The function will use a lookup loop to find where the state is located in the states array. It can then get the
+      corresponding tax rate from the stateSalesTax array.</li>
+    <li>It will display the tax rate for the selected state.</li>
+  </ol>
+</body>
+
+</html>

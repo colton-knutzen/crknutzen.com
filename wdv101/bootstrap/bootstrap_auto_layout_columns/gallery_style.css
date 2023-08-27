@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*You can use Bootstrap's background and text color values OR your own CSS!*/
+
+.container {
+	padding: 15px;
+	background-color: lightgray;
+	border: 2px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+figure {
+	border: 2px solid black;
+	background-color: white;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+img {
+	width: 100%;
+}
+
+p, figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+nav {
+	background-color: darkgrey;
+}
+
+nav a {
+	color: white;
+}
+
+nav a:hover {
+	color: yellow;
+}
+
+@media screen and (max-width:575px){
+.row
+
+.col
+
+}

@@ -1,0 +1,96 @@
+/* Scss Document */
+@charset "utf-8";
+
+
+$lightcolor:#E6D1B3;
+$mediumcolor:#CC8033;
+$darkcolor:#734C26;
+$brightcolor:#F2800D;
+
+ * {
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+	}
+
+body {background-color:lightblue;}
+
+h1 {text-align:center;
+   font-family:Helvetica, Arial, "sans-serif";
+	color:$brightcolor;}
+p {
+	text-align:center;
+   font-family:Helvetica, Arial, "sans-serif";
+	color:$darkcolor;}
+
+#container {
+	 		background-image: url("images/flatroad.jpg");
+			width:1000px;
+			height:700px;
+			border:2px solid black;
+			padding:20px 15px;
+			margin:50px auto;
+			}
+
+img[alt|="bicycle"] {
+	position: absolute;
+	top: 475px;
+	animation: ride;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+		}
+		
+img[alt|="leaf"] {
+	position: relative;
+	top: -200px;
+	left: 500px;
+	animation: leaf;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+		}	
+
+
+		@keyframes ride {
+			0% {transform:translateX(0px) rotateY(0deg)}
+			25% {transform:translateX(700px) rotateY(0deg)}
+			50% {transform:translateX(700px) rotateY(180deg)}
+			75% {transform:translateX(0px) rotateY(180deg)}
+			100% {transform:translateX(0px) rotateY(0deg)}
+		}
+
+		@keyframes leaf {
+			0% {transform:rotateZ(15deg) rotateY(0deg) translateY(0px)}
+			25% {transform:rotateZ(5deg) rotateY(360deg) translateY(500px)}
+			50% {transform:rotateZ(15deg) rotateY(720deg) translateY(1000px)}
+			75% {transform:rotateZ(5deg) rotateY(1800deg) translateY(2000px)}
+			100% {transform:rotateZ(15deg) rotateY(1440deg) translateY(3000px)}
+
+		}
+
+@media only screen and (max-width: 600px) {
+	#container {
+		width:100%;
+		padding:.25em .15em;
+		margin:0 auto;
+		}
+}
+
+/* Activity Steps:
+	1: Position the elements. Add a position and then a z-index to the container, bicyle image and leaf falling.*/	
+/*2: Add a keyframe so that the rider moves from left to right.
+ Use the from - to transform, translatex (horizontal). Name this keyframe "ride."*/
+
+ /*3: Add the animation name, duration, delay, direction, and timing function to the bicyle CSS rule.*/
+
+ /*4: Add to the ride keyframe so that the rider rotates 180 deg.
+NOTE: It rotates but now the bike does not move from left to right. 
+Why? 
+Instead of using the from - to command, need to specify what movement is in what percent of the entire animation. 0 - 100%*. Use the animation code below. Name this keyframe "riderrotate". Add the transform property to each percentage, then add the values of translates, and rotatey to each.*/
+
+/*: 5: Add the animation name (riderroate) to bicyle CSS rule. Add/modify the duration, timing etc.*/
+
+ /*6: Add a keyframe so that the leaf falls from the top. Use percentage for the entire action. Use transform rotate z, rotate y, and translatey.*/
+
+ /*7: Add the animation name, duration, delay, direction, and timing function to the leaf.*/
+	
+  			

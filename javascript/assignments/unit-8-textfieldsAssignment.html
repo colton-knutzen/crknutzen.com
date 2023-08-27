@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Operators and Textfields Assignment</title>
+
+<style>
+
+body {background-color:#C99;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+</style>
+
+
+<script>
+  //go to the dom & view value1
+  //catch value1 in a varaible
+  //with varaible I can do the rest with onclick functions 
+
+
+
+  //these are all the variables that will be used. I figure there's a more efficient way to do this with less variables, but this made sense to me.
+let value1 = 0;
+let value2 = 0;
+let value3 = 0;
+let value4 = 0;
+let value5 = 0;
+let value6 = 0;
+
+
+
+//1 - Display value 1
+function displayValue1() {
+  value1 = document.querySelector("#value1").value; //this finds the number input by the user in the text area, and stores it in the variable value1 as a string
+  document.getElementById("question1").value = value1; //this displays the new value1 string in the input area 
+}
+
+//2 - Display value 2
+function displayValue2() {
+  value2 = document.querySelector("#value2").value;  //this finds the number input by the user in the text area, and stores it in the variable value2 as a string
+  document.getElementById("question2").value = value2; //this displays the new value2 string in the input area 
+}
+
+//3 - multiple value 1 and value 2
+function multiply() {
+  value1 = document.querySelector("#value1").value;
+  value2 = document.querySelector("#value2").value;
+  document.getElementById("question3").value = value1 * value2; //this multiples the two values together and displays it to the input area
+}
+
+//4 - add value1 + value 2
+function add() {
+  value1 = document.querySelector("#value1").value;
+  value2 = document.querySelector("#value2").value;
+  value3 = parseFloat(value1); //this converts   the string data of value1 into a number data type into the new variable value3. Now thinking about it, I don't understand how I could multiple the strings together in question 3, but it breaks if I try adding them? I understand now. It's because the computer understands to multiple two numbers together, but here I'm telling the computer to put two strings together side by side. Need to convert to number data type for addition to work, when the computer is smart enough to figure out the above.
+  value4 = parseFloat(value2);
+  document.getElementById("question4").value = value3 + value4; //this adds the two new variables together and displays in input area
+}
+
+
+
+
+//5. - use increment operator
+function increment() {
+  value1 = document.querySelector("#value1").value;
+  value2 = document.querySelector("#value2").value;
+  value3 = parseFloat(value1);
+  value4 = parseFloat(value2);
+  value5 = value3 + value4; //this adds the two number data types into one variable
+  value5 = ++value5; //this adds an increment of 1 to variable value5
+  document.getElementById("question5").value = value5;
+}
+
+</script>
+
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Project 3 - Operators and Textfields - Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+
+
+
+
+<h3>Instructions</h3>
+
+
+<p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button.  </p>
+<form name="form1" method="post" action="#">
+  <p>
+    <label for="value1">Enter a number for value 1:</label> 
+    <input type="number" name="value1" id="value1" value="0"/>
+  </p>
+  <p>
+    <label for="value2">Enter a number for value 2:</label> 
+    <input type="number" name="value2" id="value2" value="0"/>
+  </p>
+  <p>1.
+    <input type="button" value="Display value1" name="" onclick="displayValue1();"/>
+    Display the value you entered for value1:
+  <input type="text" id="question1" value=""/>
+  </p>
+  <p>2.
+    <input type="button" value="Display value2" name="" id="" onclick="displayValue2();" />
+    Dislplay the value you entered for value2:
+  <input type="text" id="question2" value=""/>
+  </p>
+  <p>3.
+    <input type="button" value="Multiply" name="" id="" onclick="multiply();"/>
+    Display the value of value1 * value2:
+  <input type="text" id="question3" value=""/>
+  </p>
+  <p>4.
+    <input type="button" value="Add" name="" id="" onclick="add();"/>
+    Display the results of value1 + value2 in the following textfield.
+  <input type="text" id="question4" value=""/>
+  </p>
+  <p>5.
+    <input type="button" value="Increment count" name="" id="" onclick="increment();"/>
+    Use the increment operator to add 1 to count and display the new value of count.
+  <input type="text" id="question5" value=""/>
+  </p>
+  <p>
+    <input type="reset" name="Reset" id="button" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

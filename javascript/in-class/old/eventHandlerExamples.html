@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function displayGreeting(){
+            alert("Good Afternoon! Welcome to JavaScript");
+        }
+
+        //displayGreeting();    //runtime function call
+
+        //assign a function to the click property of the button
+
+        // document object is the 'web page' displayed by the browser
+
+        function pageSetup(){
+            //alert("The body has been fully loaded!");
+
+            let button2 = document.querySelector("#clickButton");       //access an object on the document object
+            console.log(button2);
+
+            //Method 2 to assign event handlers.  Uses the onclick property
+            button2.onclick = function(){
+                displayGreeting();
+            }
+
+                        //old school access to an object on the document object
+            let button3 = document.getElementById("listenerButton");
+            console.log(button3);
+
+            //Method 3 using the addEventListener()
+                                    // use function name WITHOUT ()
+            //button3.addEventListener("click", displayGreeting );
+
+                                    // use callback function to run the code/function call
+            button3.addEventListener("click", function(){
+                displayGreeting();
+            });
+        }//end pageSetup()
+
+
+
+
+    </script>
+</head>
+<body onload="pageSetup()">
+    <h1>WDV221 Intro JavaScript</h1>
+    <h2>UNIT-5 Event Handlers</h2>
+    <h3>Implementing event handlers using HTML, JavaScript properties, JavaScript addEventListener()</h3>
+    <div>
+
+        <p style="background-color: bisque;">
+            Assign an HTML event attribute:  
+            <button onclick="displayGreeting()">Display Greeting</button>    
+        </p>
+
+        <p>
+            <!-- assign the event handler using JavaScript -->
+            Assign a JavaScript onclick property: <button id="clickButton">Display Greeting: .click property</button>
+        </p>
+
+        <p>
+            <!-- assign the eventListener to the button -->
+            Assign a JavaScript eventListener: <button id="listenerButton">Display Greeting: eventListener()</button>
+        </p>
+
+    </div>
+
+</body>
+</html>

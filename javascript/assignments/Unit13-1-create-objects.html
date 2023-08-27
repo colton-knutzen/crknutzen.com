@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Part 1    
+        //3. Parallel arrays
+        let bookTitles = ["Beginning Javascript", "Logic with ES6", "Javascript Objects Made Easy"];
+        let bookPrices = [19.99, 29.49, 999.99];
+        let bookAuthors = ["Smith", "Johson-Parker", "Westin"];
+        //console.log(bookTitles);
+        //console.log(bookPrices);
+        //console.log(bookAuthors);
+
+        //1. Class for Book Objects
+        class masterBook {
+            constructor(bookTitle, bookPrice, bookAuthor) {
+                this.bookTitle = bookTitle;
+                this.bookPrice = bookPrice;
+                this.bookAuthor = bookAuthor;
+            }
+            //2.
+            studentDiscountPrice() {
+                const discountPrice = this.bookPrice * 0.8; //multiples prices by 80% which gives it a 20% discount
+                return discountPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' }); //converts final, discounted price to US currency
+            }
+        }
+
+        //4. Assigning variables to each parallel array
+        let book1 = new masterBook(bookTitles[0], bookPrices[0], bookAuthors[0]);
+        let book2 = new masterBook(bookTitles[1], bookPrices[1], bookAuthors[1]);
+        let book3 = new masterBook(bookTitles[2], bookPrices[2], bookAuthors[2]);
+
+        //5. Display array to console
+        console.log(book1);
+        console.log(book2);
+        console.log(book3);
+
+        //6. Load book objects into javascriptBooks array
+        let javascriptBooks = [book1, book2, book3];
+
+
+        //7. Prints contents of javascriptBooks along with discounted price
+        for (let i = 0; i < javascriptBooks.length; i++) {
+            const book = javascriptBooks[i];
+            console.log(book.bookTitle, book.bookAuthor, book.bookPrice, book.studentDiscountPrice());
+        }
+
+        //Part 2
+        //1. Three book objects for each array
+        let bookA = {
+            bookTitle: "Beginning Javascript",
+            bookPrice: 19.99,
+            bookAuthor: "Smith",
+            studentDiscountPrice() {
+                const discountPrice = this.bookPrice * 0.8;
+                return discountPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        }
+
+        let bookB = {
+            bookTitle: "Logic with ES6",
+            bookPrice: 29.49,
+            bookAuthor: "Johson-Parker",
+            studentDiscountPrice() {
+                const discountPrice = this.bookPrice * 0.8;
+                return discountPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        }
+
+        let bookC = {
+            bookTitle: "Javascript Objects Made Easy",
+            bookPrice: 999.99,
+            bookAuthor: "Westin",
+            studentDiscountPrice() {
+                const discountPrice = this.bookPrice * 0.8;
+                return discountPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        }
+
+        //2. Display to console
+        console.log(bookA);
+        console.log(bookB);
+        console.log(bookC);
+
+        //3. The Three books above are loaded into an array
+        let newBooks = [bookA, bookB, bookC];
+
+        //4. Displays the newBooks arrary to the console, with the student discount in us$
+        function load(){
+        for (let i = 0; i < newBooks.length; i++) {
+        const book = newBooks[i];
+        console.log(book.bookTitle, book.bookAuthor, book.bookPrice, book.studentDiscountPrice());
+        //document.getElementById("part2").innerHTML = book.bookTitle, book.bookAuthor, book.bookPrice, book.studentDiscountPrice();
+        //Tried printing the arrays to the document multiple times but couldn't get it to work
+        }
+    }
+    </script>
+
+
+</head>
+
+<body onLoad="load()">
+    <h1>13-1: Create JavaScript Objects</h1>
+    <span id="part2"></span>
+    <span id="part3"></span>
+
+</body>
+
+</html>

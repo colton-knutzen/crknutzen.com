@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>WDV221 Intro Javascript</title>
+	<script src="productArrays.js"></script>
+	<script>
+		/*
+		Product objects have the following properties and methods
+			prod_name
+			prod_number
+			prod_manufacture_price
+			prod_suggestedRetailPrice( )	
+				this function will create the suggest retail price of the object
+				to calculate take manufacture_price times 1.67
+		*/
+
+		//2. Product Object
+		let prodcut = {
+			prod_name: "",
+			prod_number: "",
+			prod_manufacture_price: "",
+			prod_suggestedRetailPrice: ""
+
+			//not sure how to use this function, but I can still achieve the 1.67 suggests price below
+			/*prod_suggestedRetailPrice() {
+				return this.prod_manufacture_price * 1.67;
+			}*/	
+		};
+
+		//3. Product Objects from external array
+		let productList = [];
+
+		for (let i = 0; i < productNames.length; i++) {
+			let product = {
+				prod_name: productNames[i],
+				prod_number: productNumbers[i],
+				prod_manufacture_price: productManPrices[i],
+				prod_suggestedRetailPrice: productManPrices[i] * 1.67 //this creates the suggested retail price by multiplying the prodcutManPrices by 1.67 before storing in prod_suggestedRetailPrice
+			}
+			productList.push(product)
+		};
+		console.log(productList);
+
+		//4. On page load, displays the length of productList on the page
+		function numberOfProducts() {
+			document.getElementById("numberOfProducts").innerHTML = productList.length;
+		}
+
+		//5. Displays contents of productList array in the same formate as the example
+		function productListDisplay() {
+			let productListElement = document.getElementById('productListDisplay');
+			let productListHTML = "";
+
+			for (let i = 0; i < productList.length; i++) {
+				let prodcut = productList[i];
+
+				productListHTML += "Product: " + productList[i].prod_name + "<br>";
+				productListHTML += "Product Number: " + productList[i].prod_number + "<br>";
+				let manufacture_price = productList[i].prod_manufacture_price.toLocaleString("en-US", { style: "currency", currency: "USD" }); //Converts the number to USD before displaying
+				productListHTML += "Product Wholesale Price: " + manufacture_price + "<br>";
+				let suggestedPrice = productList[i].prod_suggestedRetailPrice.toLocaleString("en-US", { style: "currency", currency: "USD" });
+				productListHTML += "Product Suggested Retail Price: " + suggestedPrice + "<br><br>";
+			}
+			productListElement.innerHTML = productListHTML;
+		}
+
+	</script>
+
+</head>
+
+<body onload="numberOfProducts()">
+	<h1>WDV221 Intro Javascript</h1>
+	<h2>Skill Test - Create and Display Javascript Objects</h2>
+
+	<h2>Product Inventory List</h2>
+	<div>
+		<h3>EXAMPLE OUTPUT</h3>
+		<p>Number of Products in Product List: 1</p>
+		<p>
+			Product: Standard Keyboard</br>
+			Product Number: std-key<br>
+			Product Wholesale Price: $11.90</br>
+			Product Suggested Retail Price: $19.87</br>
+		</p>
+
+
+		<h3>PROJECT OUTPUT</h3>
+		<p>Number of Products in Product List: <span id="numberOfProducts"></span></p>
+
+		<p>
+			<span id="productListDisplay"></span>
+			<script>productListDisplay();</script>
+		</p>
+
+	</div>
+	<h3>Instructions</h3>
+	<ol>
+		<li>Attach the external script file as the source for your data</li>
+		<li>Use the properties/methods defined in the comments to create a Product object</li>
+		<li>Using the data provided in the external script file create an array of Product objects called productList
+		</li>
+		<li>Display the number of objects in the productList array on the page as indicated</li>
+		<li>Use a loop to display the contents of the productList on the page beginning after the PRODUCT OUTPUT</li>
+		<li>The output of the array should follow the same pattern as the example output</li>
+		<li>All prices should be displayed as USD formatted currency</li>
+	</ol>
+</body>
+
+</html>

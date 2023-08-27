@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>2-2 Working with Attribute Selectors</title>
+	<meta charset="UTF-8">
+	<meta name="description">
+	<meta name="keywords">
+
+	<link href="css/koala.css" rel="stylesheet" type="text/css">
+	<link href="css/flex_layout.css" rel="stylesheet" type="text/css">
+	<style>
+		header {
+			text-align: center;
+			padding-bottom: 30px;
+			font-size: xx-large;
+		}
+
+		div img[alt^="space"] {
+			background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,0,255,1) 0%, rgba(9,38,121,1) 88%);
+			padding: 15px;
+			border: 1px;
+		}
+
+		div img[alt^="forest"] {
+			background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,255,0,1) 0%, rgba(22,121,9,1) 49%);
+			padding: 15px;
+			border: 1px;
+		}
+
+		div img[alt~="hole"] {
+			background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(209, 0, 255, 1) 0%, rgba(93, 9, 121, 1) 57%);
+			;
+			padding: 15px;
+			border: 1px;
+		}
+
+		div img[alt~="tree"] {
+			background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 13%, rgba(48,255,0,1) 80%);
+			padding: 15px;
+			border: 1px;
+		}
+	</style>
+</head>
+
+<header>
+	<b>2-2: Working with Attribute Selectors</b>
+</header>
+
+<body>
+	<!---->
+	
+	<div class="flex-container">
+		<p style="text-align: center;">*All the additional information is %100 fictitious</p>
+
+		<div class="flex-gallery">
+			<div>
+				<img src="gallery_images/black-hole.jpg" alt="space Percy black hole">
+				<p><strong>Percy Black Hole</strong><br>
+					15 Million Years old<br>
+					Locationed in the Artic System</p>
+			</div>
+
+
+			<div>
+				<img src="gallery_images/comet.jpg" alt="space sozin, comet">
+				<p><strong>Sozin's Comet</strong><br>
+					300,000 Years Old<br>
+					This is it's second trip to Earth!<br></p>
+			</div>
+
+			<div>
+				<img src="gallery_images/forest-path.jpg" alt="forest fairy forest, scottland, jungleberry tree">
+				<p><strong>Fairy Forest</strong><br>
+					Jungleberry Trees<br>
+					Locationed in Scottland</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/forest-top.jpg" alt="forest rino park, evergreen, wisconsin">
+				<p><strong>Rino Nation Park</strong><br>
+					Evergreens<br>
+					Locationed in Wisconsin</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/milky-way.jpg" alt="space gods tear">
+				<p><strong>God's Tear</strong><br>
+					200 Million Years Old<br>
+					Named after looking like a tear<br>
+					Locationed in the Holly Galaxy</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/forest.jpg" alt="forest spooky forest, iowa">
+				<p><strong>Spooky Forest</strong><br>
+					Spooky Trees<br>
+					Named after looking spooky<br>
+					Locationed in Iowa</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/nebula.jpg" alt="space ghost nebula">
+				<p><strong>Ghost Nebula</strong><br>
+					15 Million Years Old<br>
+					Locationed in the Invisible System</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/spin.jpg" alt="space drainer black hole">
+				<p><strong>Drainer's Black Hole</strong><br>
+					5 Days Old<br>
+					Locationed in the Aquarious System</p>
+			</div>
+
+			<div>
+				<img src="gallery_images/tree.jpg" alt="forest druid staff, wizard tree moon park">
+				<p><strong>Druid's Staff</strong><br>
+					Wizards's Tree<br>
+					Locationed in Moon Park</p>
+			</div>
+
+		</div>
+
+		<footer>
+			<a href="../../homework_page/wdv205_homework_page.html">Return to Homework Page</a>
+		</footer>
+
+</body>
+
+</html>

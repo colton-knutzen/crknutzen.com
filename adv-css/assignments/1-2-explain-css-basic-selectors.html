@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-2: Explain CSS Basic Selectors</title>
+
+    <style>
+        body {
+            background-color: burlywood;
+            width: 750px;
+            padding: 10px 25px;
+            margin: 0 auto;
+            border: 1px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>1-2: Explain CSS Basic Selectors</h1>
+    </header>
+
+    <article>
+        <p>
+        <h2>Element Selector</h2>
+        </p>
+        <p>
+            An Element Selector is exactly what it's title as; it selects a specific HTML element across the entire page (if used imbedded), the element (if inline), or site (if style sheet.). The board element selector is best used when you're trying to achieve an universal style of some kind. Background colors are great examples. Whether it's for a universal nav, footer, or body. It is identified as;
+        </p>
+        <p>element { </p>
+                <p>attribute: value;</p>
+        }
+       
+
+        <p>
+        <h2>Group Selector</h2>
+        </p>
+        <p>
+            The group selector is exactly like the Element Selector, except is selects multiple html elements. When the same CSS code needs to be applied to multiple elements, the group selector saves time rewriting the CSS and space in the code. It's best used for universal styles that need to be applied across multiple elements, like if you want the same background color for both the nav and footer to give the site a start and finish visual cue, almost like a sandwich. The code is identicle to the Element selector, except there is a , between the seperate elements.
+        </p>
+
+        <p>
+        <h2>Descendant Selector</h2>
+        </p>
+
+        <p>
+           Descendant selectors are almost like if-then type selectors. The CSS will only apply to an element if they meet the two or more requirements. This is best used when you use multiple elements of the same kind, but they are for different things. For example, if I want values to only appear in the top nav, but my site also has a side nav I could create a 'top-nav' div and write a css rule like:
+        </p>
+           <p>top-nav nav { </p>
+            <p>property: value;</p>
+    }
+      
+    <p>This way, the descendant selector will only select the nav if it is within the top-nav div</p>
+
+        <p>
+        <h2>Class Selector; dependent & independent</h2>
+        </p>
+        <p>
+            The class selector selects an html element that has been assigned a specific class. This is best used when wanting a more percise selections but still having the option to target multiple pages. An exmaple for this would be if you have multiple articles in the body section. You can give a 'main' class to the most important piece in the body, which will allow you to easily target that with CSS that will make it stand out to the users that 'hey! this is important!' design. The difference between dependent & independent is that dependent must be attached to an element within the CSS. For example:
+        </p>
+
+    </p>
+    <p>p.class { </p>
+     <p>property: value;</p>
+}
+
+<p>this dependent class selector will select all elements given the 'class' class, but only if they are within a paragraph element.</p>
+
+<p>.class { </p>
+    <p>property: value;</p>
+}
+
+<p>this independent class selector will select all elements given the 'class' class regardless of other elements.</p>
+
+
+
+        <p>
+        <h2>ID Selector; dependent & independent</h2>
+        </p>
+        <p>
+           The ID selector is just like the class selector except that IDs can only be used once, which makes them even more percise and unique. They are designated by a # in replace of the . of a class. The difference between dependent and independent remain the same.
+        </p>
+
+
+        <p>
+        <h2>Universal Selector</h2>
+        </p>
+        <p>
+            The universal select will apply to every element. This is best used when you need to apply a basic css rule to everything. For example, if you wanted the exact same font for every piece of type in you page, you could write the font style in the universal selector. But that wouldn't be the best design choice since it would get boring and too repetive for the user.
+        </p>
+
+        <p>
+        <h2>Pseudo Selector</h2>
+        </p>
+        <p>
+            A pseudo selector is the most unique selector, as it targets a state of an element rather than an element itself. The most common example is the mouse hover. When the mouse hovers over a button, it can target that state and turn it into a different color. This is written as:
+        </p>
+
+        <p>selector:pseudo-class { </p>
+            <p>property: value;</p>
+        }
+
+        <p>
+            <h2>Specificity hierarchy</h2>
+            </p>
+<p> They are in order from lowest to highest: Element, Group, Descendent, Class, ID</p>
+
+    </article>
+
+    <footer><p></p>
+        <a href="../homework_page/wdv205_homework_page.html">Return to Homework Page</a>
+    </p></footer>
+
+</body>
+
+</html>

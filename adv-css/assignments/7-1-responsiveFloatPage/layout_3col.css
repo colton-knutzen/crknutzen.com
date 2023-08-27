@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.ads {
+  background-color: green;
+  width: 120px;
+  float: left;
+  height: 490px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+.ads h4 {
+  text-align: center;
+}
+
+img[alt~=smiley] {
+  width: 80px;
+  height: 80px;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+body {
+  background-color: beige;
+}
+
+#container {
+  width: 1000px;
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px auto;
+  border-radius: 25px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  font-family: Helvetica, sans-serif;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 23px 23px 0 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.2em;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+aside {
+  background-color: orange;
+  width: 100px;
+  float: right;
+  height: 490px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+aside ul {
+  list-style-type: none;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+aside li {
+  padding-top: 4px;
+}
+
+main {
+  height: 494px;
+  width: 880px;
+}
+main p {
+  padding-left: 15px;
+}
+main h4 {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+main p + h4 {
+  padding-top: 80px;
+}
+
+footer {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+  }
+  main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .ads {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=layout_3col.css.map */

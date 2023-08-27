@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //define object: a container that holds data, that we can use in our application
+            // an object can be a variable, best how you are using the object
+
+        let count = 1;
+
+        let emailAddress = "jhgullion@dmacc.edu";   
+
+        emailAddress = "j.smith@gmail.com";
+        emailAddress = "bob.rogers@somecompany.org";
+
+        userName = "";          //by default browser defines a global variable 
+                                //AFTER looking for a global definition of that variable
+
+        console.log(userName);
+
+        let atSymbolIndex = emailAddress.indexOf("@");
+
+        console.log("at symbol located at: " + atSymbolIndex);
+
+        userName = emailAddress.substring(0,atSymbolIndex);
+
+        console.log("username: " + userName);
+
+        let serverName = emailAddress.substring(atSymbolIndex + 1);
+
+        console.log("server name: " + serverName);
+        
+
+
+    </script>
+
+</head>
+<body>
+    <h1>WDV221 Intro JavaScript</h1>
+    <h2>Using the String Object to substring a string</h2>
+</body>
+</html>

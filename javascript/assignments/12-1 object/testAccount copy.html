@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="BankAccount.js"></script>
+    <script>
+        //deposit method: will accept an input and add to the account balance
+        //withdraw method: will accept an input and substract from the account balance
+        //balance method: will return the current account balance
+        //account info method: will return the account name, account number and account balance as an array.
+
+        let account = new BankAccount();
+        console.log(account);
+
+        account.accountName = "Colton Knutzen";
+        account.accountNumber = 1;
+        account.accountBalance = 0;
+        
+
+
+
+
+
+    function displayBalance() {
+        account.accountBalance = document.querySelector("#withdraw").value;
+
+
+
+        account.accountBalance = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(account.accountBalance); //converts the accountBalance to USD format
+        document.getElementById('displayBalance').innerHTML = account.balance; //displays the current accountBalance
+    }
+    </script>
+
+
+</style>
+
+</head>
+<body>
+    <h1>WDV221 Intro to JavaScript</h1>
+    <h2>Unit 12-1: Bank Account</h2>
+ 
+<p><strong>Account Name:</strong>  <script>document.write(account.accountName);</script> <span style="padding-left: 15px;"></span><strong>Account Number: </strong><script>document.write(account.accountNumber);</script> </p>
+
+
+<p>Withdraw: <input type="text" name="withdraw" id="withdraw" /></p>
+
+<p>Deposit: <input type="text" name="Deposit" id="Deposit" /></p>
+
+<input type="button" value="Change Balance" name="" onclick="displayBalance();"/>
+<span style="padding-left: 15px;"></span>Current Balance: <span id="displayBalance"></span>
+
+</body>
+</html> 

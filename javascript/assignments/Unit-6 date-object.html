@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>WDV221 Intro Javascript - Unit 4</title>
+
+	<style>
+		span {
+			font-style: italic;
+		}
+	</style>
+
+
+	<script>
+
+		let today = new Date(); //today becomes Date object
+
+		function formatMMDDYYYY(inputDate) { //today is passed into inputDate parameter, to be used in following function
+			return inputDate.getMonth()+1 +"/" + inputDate.getDate() + "/" + inputDate.getFullYear();
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<h1>WDV2221 Intro Javascript</h1>
+	<h2>Unit-6 Assignment - Date Object </h2>
+	<h3>Directions:</h3>
+
+	<p> The Javascript Date Object contains the information about the date. It is often used in applications to access, format and display date related information.  </p>
+	<p> For this assignment you will need to research the Date object in Javascript to find the methods of a Date object that will get the information needed for the function. </p>
+	<p>Create a function called formatMMDDYYYY(inputDate)	</p>
+	<p>1. The function will accept an input parameter that is a date object</p>
+	<p>2. It will use the methods of the Date object to get the month, date and year from the input date object</p>
+	<p>3. Use the + to concatenate the pieces together to format a string that will look something like "3/1/2021"</p>
+	<p>4. return the string when the function is complete</p>
+
+	<p><strong> Today's Date is: <script>document.write(formatMMDDYYYY(today) );</script></strong></p>
+</body>
+
+</html>

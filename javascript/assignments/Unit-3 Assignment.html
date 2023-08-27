@@ -1,0 +1,99 @@
+<!doctype html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>WDV221 Intro Javascript</title>
+
+  <style>
+    div#container {
+      width: 960px;
+      margin: auto;
+      padding: 10px;
+      background-color: white;
+      border: thin solid black;
+    }
+  </style>
+
+  <script>
+
+    var studentName = "";	//global variable to be used later
+    var studentEmail = "";	//global variable to be used later
+
+
+    function displayGreeting() {
+
+      alert("Hello! Welcome to WDV221 Intro Javascript");
+
+    }
+
+    function getStudentName() {
+      studentName = prompt("Please enter your name");
+    }
+
+    function getStudentEmail() {
+      studentEmail = prompt("Enter your DMACC Email address")
+    }
+
+    function displayEmail() {
+      alert("Student Email: " + studentEmail);
+    }
+
+
+    function displayEmailName() {
+      let atSymbol = studentEmail.indexOf("@");		//local variable that will store the location of the @ symbol
+      let emailNameOnly = studentEmail.substr(0, atSymbol);	//local variable that will store the value of the name portion of the email address
+
+      alert("Email name: " + emailNameOnly);
+    }
+
+    function displayEmailServer() {
+      let atSymbol = studentEmail.indexOf("@");		//local variable that will store the location of the @ symbol
+      let serverNameOnly = studentEmail.substr(atSymbol + 1);	//local variable that will store the value of the name portion of the email address
+
+      alert("Email name: " + serverNameOnly);
+    }
+
+
+  </script>
+
+
+
+</head>
+
+<body>
+  <div id="container">
+
+    <h1>WDV221 Intro Javascript</h1>
+    <h2>Unit-3 Functions</h2>
+
+    <script>displayGreeting();</script>
+
+    <script>getStudentName();</script>
+
+    <script>getStudentEmail();</script>
+
+    <input type="button" name="button" id="button" value="Display Email" onClick="displayEmail()">
+    </p>
+
+    <p>
+      <script> document.write("Student name: " + studentName); </script>
+    </p>
+    <p>
+      <script> document.write("Student email: " + studentEmail); </script>
+    </p>
+
+
+    <p>
+      <input type="button" name="button2" id="button2" value="Display Email Name" onClick="displayEmailName()">
+    </p>
+
+    <p>
+      <input type="button" name="button3" id="button3" value="Display Email Server" onclick="displayEmailServer()">
+    </p>
+    <p>&nbsp;</p>
+  </div>
+
+  <h2>&nbsp;</h2>
+</body>
+
+</html>
