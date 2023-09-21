@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pageSetup() {
+            document.querySelector("#hideP1").onclick = function () {
+                //alert("Hide P1 Clicked");
+                document.querySelector("#p1").style.visibility = "hidden";
+            }
+
+            document.querySelector("#showP1").onclick = function () {
+                //alert("Show P1 Clicked");
+                document.querySelector("#p1").style.visibility = "visible";
+            }
+
+            document.querySelector("#displayNone").onclick = function () {
+                document.querySelector("#p3").style.display = "none";
+            }
+
+            document.querySelector("#displayInline").onclick = function () {
+                document.querySelector("#p3").style.display = "inline";
+            }
+
+            document.querySelector("#displayBlock").onclick = function () {
+                document.querySelector("#p3").style.display = "block";
+            }
+
+            document.querySelector("#displayInlineBlock").onclick = function () {
+                document.querySelector("#p3").style.display = "inline-block";
+                document.querySelector("#p3").style.width = "200px";
+            }
+        }
+    </script>
+</head>
+
+<body onload="pageSetup()">
+    <h1>WDV321 Adv JavaScript</h1>
+    <h2>Unit 3 Dyanmic Structure - Visbility Example</h2>
+    <p id="p1" class="">First Paragraph</p>
+    <p id="p2" class="">Second Paragraph</p>
+    <p id="p3">Third Paragraph</p>
+
+    <p>
+        <button id="hideP1">Hide P1</button>
+        <button id="showP1">Show P1</button>
+    </p>
+
+    <p>
+        <button id="displayNone">Display None</button>
+        <button id="displayInline">Display Inline</button>
+        <button id="displayBlock">Display Block</button>
+        <button id="displayInlineBlock">Display Inline Block</button>
+    </p>
+</body>
+
+</html>

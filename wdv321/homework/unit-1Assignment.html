@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDV321 Advanced JavaScript - Unit-1</title>
+    <script>
+        let user = { userName: "Mary", fontColor: "black", bgColor: "green" };
+
+        let colorArray = ["red", "blue", "green", "yellow", "orange", "white"];
+
+        function displayUserObj() {
+            console.log(user);
+        }
+
+        function pageSetup() {
+            let selectObj = document.getElementById("bgColorSelect");
+            selectObj.onchange = function(){
+                bgColorChange();
+            }
+
+            //Current Year
+            let currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        }
+
+        function bgColorChange() {
+            let selectColor = document.querySelector("select").value;
+            //console.log(selectColor)
+
+            if (selectColor === user.bgColor) {
+                alert("Current background color already in use. Please select another.");
+            }
+            else {
+                if (document.querySelector("select").selectedIndex == 0) {
+
+                } else {
+                    document.body.style.backgroundColor = selectColor;
+                    user.bgColor = selectColor;
+                    //console.log(user.bgColor);
+                }
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        #container {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: antiquewhite;
+
+        }
+
+        header {
+            border-bottom: thick solid brown;
+            text-align: center;
+        }
+
+        main {
+            padding-left: 5px;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body onload="pageSetup()">
+    <div id="container">
+
+        <header>
+            <h1>WDV321 Advanced JavaScript</h1>
+            <h2>Unit-1 Assignment Review JavaScript</h2>
+        </header>
+
+        <main>
+            <h2>Welcome back
+                <script>document.write(user.userName);</script>
+            </h2>
+            <h3>Please Set Your Preferences</h3>
+
+            <p>
+                <label for="bgColorSelect">Choose your background color</label>
+                <select name="bgColorSelect" id="bgColorSelect">
+                    <option value="">Select a Color</option>
+                    <script>
+                        for (let i = 0; i < colorArray.length; i++) {
+                            let optionObj = document.createElement("option");
+                            //console.log(optionObj);
+                            optionObj.text = colorArray[i];
+                            optionObj.value = colorArray[i];
+                            //console.log(optionObj);
+                            document.querySelector("#bgColorSelect").add(optionObj);
+                        }</script>
+                </select>
+            </p>
+
+            <p>
+                <button onclick="displayUserObj()">Display Preferences</button>
+            </p>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;<span id="currentYear"></span> rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

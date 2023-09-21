@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let carMakes = ["Ford", "Chevy", "Honda"];
+        let carMakesValue = ["FO", "CH", "HO"]
+        //use the carMakes array as the source to populate the selectCar2 dropdown
+
+        
+
+        function pageLoad() {
+            document.querySelector("#newCandy").onclick = function(){
+                changeToCandy();
+            }
+        }
+
+        function changeToCandy() {
+            //change a dropdown from cars to candy
+            
+        }
+
+    </script>
+
+
+</head>
+<body onload="pageLoad()">
+    <h1>WDV321 Adv JavaScript</h1>
+    <h2>Unit 2: Dynamic Content</h2>
+    <p> Hard coded HTML drop down:
+        <label for="selectCar">Choose a car:</label>
+        <select name="selectCar" id="selectCar">
+            <option value="">Please Select a Car</option>
+            <option value="FO">Ford</option>
+            <option value="CH">Chevy</option>
+            <option value="HO">Honda</option>
+        </select>
+    </p>
+    <p>Dynamic coded HTML drop down (runtime):
+        <label for="selectCar2">Choose a Car</label>
+        <select name="selectCar2" id="selectCar2">
+            <option value="">Please Select a Car</option>
+                <script>
+                    for(let i=0; i<carMakes.length; i++){
+                        //create a string and put it together
+                        //let optionMsg = "<option value=" + carMakesValue[i] + ">" + carMakes[i] + "</option>";
+                        //document.write(optionMsg);
+
+                        //create the option object and placing on the document object
+                        let optionObj = document.createElement("option");
+                        console.log(optionObj);
+                        optionObj.text = carMakes[i];
+                        optionObj.value = carMakesValue[i];
+                        console.log(optionObj);
+                        document.querySelector("#selectCar2").add(optionObj); //add option object to drop down
+                    }
+                </script>
+        </select>
+    </p>
+    <p>
+        Click this button to change the options of the drop down list. <button id="newCandy">Change to Candy</button>
+    </p>
+    
+</body>
+</html>

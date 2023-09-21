@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .productDiv {
+            width: 400px;
+            background-color: limegreen;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script>
+        function pageSetup() {
+            document.querySelector("#addKeyboard").onclick = function () {
+                let productDiv = document.createElement("div");
+                productDiv.setAttribute("class", "productDiv");
+
+                let para1 = document.createElement("p");
+                para1.innerHTML = "Keyboard";
+                productDiv.appendChild(para1);
+
+                let para2 = document.createElement("p");
+                para2.innerHTML = "$23.59";
+                productDiv.appendChild(para2);
+
+                let shoppingList = document.querySelector("#shoppingList");
+                shoppingList.appendChild(productDiv);
+            }
+
+            //Using template
+            document.querySelector("#addMouse").onclick = function () {
+            }
+        }
+
+        function addWirelessMouse() {
+            let temp = document.querySelector("#productTemplate");
+            let newProductDiv = temp.content.cloneNode(true);
+            console.log(newProductDiv);
+
+            let shoppingList = document.querySelector("#shoppingList");
+            shoppingList.appendChild(newProductDiv);
+        }
+    </script>
+</head>
+
+<body onload="pageSetup()">
+    <!--The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads.
+
+        The content inside <template> can be rendered later with a JavaScript.-->
+    <h1>WDV321 Adv JavaScript</h1>
+    <h2>Unit-3 Dynamic Structure - Template Technique</h2>
+    <section id="shoppingList">
+        <div class="productDiv">
+            <p>Computer Mouse</p>
+            <p>Price: $12.59</p>
+        </div>
+    </section>
+    <p>
+        <button id="addKeyboard">Add Keyboard to List</button>
+        <button onclick="addWirelessMouse()">Add Wireless Mouse</button>
+    </p>
+    <template id="productTemplate">
+        <div class="productDiv">
+            <p>Product Name</p>
+            <p>Product Price</p>
+        </div>
+    </template>
+</body>
+
+</html>

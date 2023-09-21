@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let icecreamFlavor = ["Vanilla", "Chocolate", "Strawberry"];
+        let candyList = ["Snickers", "Reeses", "M&M"];
+
+        function pageLoad() {
+            //alert("test");
+            loadIcecream();
+
+            //JavaScript write an HTML attribute of onclick event handler
+            document.querySelector("#changeCandy").onclick = function () {
+                changeCandy();
+            }
+            document.querySelector("#changeIcecream").onclick = function () {
+                loadIcecream();
+            }
+        }
+
+        function loadIcecream() {
+            let clearProductList = document.querySelector("#productList");
+
+            while (clearProductList.options.length > 1) {
+                productList.remove(1);
+            }
+
+            for (let i = 0; i < icecreamFlavor.length; i++) {
+                let optionObj = document.createElement("option");
+                optionObj.text = icecreamFlavor[i];
+                optionObj.value = icecreamFlavor[i];
+                document.querySelector("#productList").appendChild(optionObj);
+            }
+        }
+
+        function changeCandy() {
+            let clearProductList = document.querySelector("#productList");
+
+            while (clearProductList.options.length > 1) {
+                productList.remove(1);
+            }
+
+            for (let i = 0; i < candyList.length; i++) {
+                let optionObj = document.createElement("option");
+                optionObj.text = candyList[i];
+                optionObj.value = candyList[i];
+                document.querySelector("#productList").appendChild(optionObj);
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="pageLoad()">
+    <h1>WDV321 Adv JavaScript</h1>
+    <h2>Dynamic Content - Functions </h2>
+    <p>
+        <label for="productList">Prodcut List:</label>
+        <select name="productList" id="productList">
+            <option value="">Please select a product</option>
+        </select>
+
+    </p>
+    <p>
+        <button id="changeCandy">Change List to Candy</button>
+        <button id="changeIcecream">Change List to Ice Cream</button>
+    </p>
+</body>
+
+</html>

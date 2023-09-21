@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WDV321 Advanced Javascript</title>
+	<script>
+		function createComplaintDropdown() {
+			let complaintsArray = ['Too Loud', 'Too Quiet', 'Too Bright', 'Too Dark'];
+
+			let labelObj = document.createElement("label");
+			labelObj.setAttribute("for", "commonComplaints");
+			labelObj.textContent = "Common Complaints:";
+
+			let selectObj = document.createElement("select");
+			selectObj.name = "commonComplaints";
+			selectObj.id = "commonComplaints";
+
+			let defaultOption = document.createElement("option");
+			defaultOption.value = "";
+			defaultOption.textContent = "Select Common Complaint";
+			selectObj.appendChild(defaultOption);
+
+			for (let i=0; i<complaintsArray.length; i++) {
+				let optionObj = document.createElement("option");
+				optionObj.text = complaintsArray[i];
+				optionObj.value = complaintsArray[i];
+				selectObj.appendChild(optionObj);
+			}
+
+			let dropdown = document.querySelector("#complaint_dropdown");
+			dropdown.appendChild(labelObj);
+			dropdown.appendChild(selectObj);
+		}
+
+		function createTechnicalProblemsCheckboxes() {
+			let technicalProblemsArray = ["Won't Start", "Won't Stop", "Forgot Password", "Forgot Username"]; //If I spent more time on this, I would use some string manipulations so the value and name in the checkbox were proper formting like wont_start. While what the user sees are in proper formating like Won't Start
+
+			let checkboxes = document.querySelector("#technical_problems_checkboxes");
+
+			for (let i=0; i<technicalProblemsArray.length; i++) {
+				let labelObj = document.createElement("label");
+				labelObj.htmlFor = technicalProblemsArray[i];
+
+				let checkboxObj = document.createElement("input");
+				checkboxObj.type = "checkbox";
+				checkboxObj.name = technicalProblemsArray[i];
+				checkboxObj.value = technicalProblemsArray[i];
+
+				let labelText = document.createTextNode(technicalProblemsArray[i]);
+
+				checkboxes.appendChild(labelObj);
+				checkboxes.appendChild(checkboxObj);
+				checkboxes.appendChild(labelText);
+			}
+		}
+
+		function createProductIssuesRadiobuttons() {
+			let  productIssuesArray = ["Cracked Screen", "Dead Battery", "Missing Part", "Damaged"];
+
+			let radiobuttons = document.querySelector("#product_issues_radio");
+
+			for (let i=0; i<productIssuesArray.length; i++) {
+				let labelObj = document.createElement("label");
+				labelObj.htmlFor = productIssuesArray[i];
+
+				let radioObj = document.createElement("input");
+				radioObj.type = "radio";
+				radioObj.name = "productIssue";
+				radioObj.value = productIssuesArray[i];
+
+				let labelText = document.createTextNode(productIssuesArray[i]);
+
+				radiobuttons.appendChild(labelObj);
+				radiobuttons.appendChild(radioObj);
+				radiobuttons.appendChild(labelText);
+			}
+		}
+
+		function pageLoad() {
+		document.querySelector('#contactReason').addEventListener("change", function () {
+            if (this.value === "C") {
+                document.querySelector("#complaint_dropdown").style.display = "block";
+            } else {
+                document.querySelector("#complaint_dropdown").style.display = "none";
+            }
+			if (this.value === "T") {
+                document.querySelector("#technical_problems_checkboxes").style.display = "block";
+            } else {
+                document.querySelector("#technical_problems_checkboxes").style.display = "none";
+            }
+			if (this.value === "P") {
+                document.querySelector("#product_issues_radio").style.display = "block";
+            } else {
+                document.querySelector("#product_issues_radio").style.display = "none";
+            }
+        });
+	}
+	</script>
+	<style>
+		#technical_problems_checkboxes label, #product_issues_radio label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="checkbox"], input[type="radio"] {
+			margin-right: 5px;
+		}
+
+		#complaint_dropdown, #technical_problems_checkboxes, #product_issues_radio {
+			display: none;
+		}
+	</style>
+</head>
+
+<body onload="pageLoad()">
+	<h1>WDV321 Advanced Javascript</h1>
+	<h2>Dynamic Structure - Assignment</h2>
+	<p>Use this page as the basis for your assignment. Given the drop down list provided on this page please do the
+		following things.</p>
+	<p>
+		<label for="contactReason">Reason For Contact:
+			<select name="contactReason" id="contactReason">
+				<option value="">Please select Reason for Contact</option>
+				<option value="C">Complaints</option>
+				<option value="T">Technical Problems</option>
+				<option value="P">Product Issues</option>
+			</select>
+		</label>
+	</p>
+	<div id="complaint_dropdown"></div>
+	<script>createComplaintDropdown();</script>
+
+	<div id="technical_problems_checkboxes"></div>
+	<script>createTechnicalProblemsCheckboxes();</script>
+
+	<div id="product_issues_radio"></div>
+	<script>createProductIssuesRadiobuttons();</script>
+	
+	<p>Create the content areas on the page.</p>
+	<ol>
+		<li>Create a div that contains a new drop down list with at least four common Complaints to a company. </li>
+		<li>Create a div that contains four Technical Problems displayed as a set of checkboxes. </li>
+		<li>Create a div that contains four Product Issues displayed as a set of radio buttons.</li>
+		<li>Use the display property to remove these content containers from the page.</li>
+	</ol>
+	<p>Based on the selection from the &quot;Reason For Contact&quot; dynamically display the requested set of followup
+		questions on the page using the display property.</p>
+	<p>You are welcome to change the content, layout and style of this page as desired. </p>
+	<p>&nbsp;</p>
+</body>
+
+</html>
