@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //object literal - a fast formatted object without a Class. always within {}. Let objectName = {}
+
+        let studentObj = {
+            studentName: "Mary",
+            studentID: 3224
+        }
+
+        console.log(studentObj);
+
+        let studentJSON = JSON.stringify(studentObj);
+
+        let newStudentObj = JSON.parse(studentJSON);
+
+    </script>
+</head>
+<body>
+    <h1>WDV321 Adv Javascript</h1>
+    <h2>JSON Example with Object literal</h2>
+    <p>Student Object: <script>document.write(studentObj);</script></p>
+    <p>Student JSON Object: <script>document.write(studentJSON);</script></p>
+    
+</body>
+</html>

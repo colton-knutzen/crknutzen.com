@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            check for the existence of the "homePageVisitCounter" (cookie)
+            if we find one
+                add 1 to it
+            else
+                create a new one, initial value of 1
+            put the updated value back into the cookie
+                determine expiration date?  persistent over time 99years
+                    is expiration 99 years from cookie creation OR from cookie update?
+        */
+    </script>
+
+    <script>
+        function getCookie(tag) {
+            let value = null
+            let myCookie = document.cookie + ";"
+            let findTag = tag + "="
+            let endPos
+            if (myCookie.length > 0) {
+                let beginPos = myCookie.indexOf(findTag)
+                if (beginPos != -1) {
+                    beginPos = beginPos + findTag.length
+                    endPos = myCookie.indexOf(";", beginPos)
+                    if (endPos == -1)
+                        endPos = myCookie.length
+                    value = unescape(myCookie.substring(beginPos, endPos))
+                }
+            }
+            return value
+        }
+
+        function addCookie(tag, value) {
+            let expireDate = new Date()
+            let expireString = ""
+            expireDate.setTime(expireDate.getTime() + (1000 * 60 * 60 * 24 * 365))
+            expireString = "expires=" + expireDate.toGMTString()
+            document.cookie = tag + "=" + value + ";" + expireString + ";"
+        }
+
+        if (getCookie("homePageVisitCounter") == null) {
+            console.log("Home Page Hit Counter Not Found");
+            addCookie("homePageVisitCounter", 1);
+        }
+        else {
+            console.log("Home Page Hit Counter Is already in cookie");
+            //NEW CODE HERE
+            let currentPageVisitValue = parseInt(getCookie("homePageVisitCounter")); //stores the current homePageVisitCounter in a local variable as an integer for proper incrementing
+            if (!isNaN(currentPageVisitValue)) { //checks if the current homePageVisitCounter for NaN. The ! makes the function isNaN return True if the parameter is a valid number, whereas isNaN without ! would return false. Like a double negative.
+                currentPageVisitValue += 1; //If the current homePageVisitCounter value is a valid number, adds 1
+                addCookie("homePageVisitCounter", currentPageVisitValue); //stores new value in homePageVisitCounter cookie to presist over page loads
+            } else {
+                console.log("Error. Cookie is not a valid number"); //gives error and not increment if the current value returns invalid
+            };
+        }
+
+        console.log(getCookie("homePageVisitCounter"));
+
+        function showCookie() {
+            console.log(document.cookie);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Tracking Cookie: Homepage</h1>
+    <h2>Move to Page 2, then back to Homepage to add 1 to the homePageVisitCounter</h2>
+    <p>
+        <button onclick="showCookie()">Show Cookies</button>
+    </p>
+    <p><a href="5_2_tracking_cookie_page2.html">Page 2</a></p>
+</body>
+
+</html>

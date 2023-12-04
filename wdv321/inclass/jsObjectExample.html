@@ -1,0 +1,58 @@
+<html>
+
+	<head>
+	
+		<script>
+		
+			//create and define a Javascript object
+		
+			let schoolObject = {
+			
+				schoolName:"DMACC",
+				
+				schoolCity:"Ankeny",
+				
+				schoolState:"Iowa",
+				
+				displaySchoolName: function () {
+					console.log(this.schoolName);
+				},
+				
+				displaySchoolAddress: function () {
+					console.log("Location: " + this.schoolCity + ", " + this.schoolState);
+				},
+				
+				displayValue: function(inValue) {
+					//method expects a parameter to display
+					console.log(inValue);
+				}
+			
+			};
+			
+			//access the properties of a Javascript Object
+			
+			 console.log( schoolObject.schoolName);			//put school name in console
+			
+			//access the methods of a Javascript Object
+			
+			schoolObject.displaySchoolName();
+			schoolObject.displaySchoolAddress();
+			schoolObject.displayValue("Des Moines Area Community College");			
+			
+			//change the properties of a Javascript Object
+			
+			schoolObject.schoolCity = "Des Moines";
+			
+			schoolObject.displayValue("School City: " + schoolObject.schoolCity);	
+			
+			
+		</script>
+	
+	</head>
+	
+	
+	<body>
+
+
+	</body>
+</html>

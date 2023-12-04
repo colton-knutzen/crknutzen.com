@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //JavaScript Objects
+        //  1. Object literal - fast, quick, easy, best for smaller content
+        //      unique to a page, non standardizes, doesn't work well on multiple pages
+        //  2. Create a Class and then create object from that class
+
+        let productObject = {
+            proName: "Mouse",
+            proPrice: "12.59",
+            proNumber: 22312,
+            proQuantity: 21,
+
+            proDiscount: function(){
+                return this.proPrice * .15;
+            }
+        }
+        console.log(proDiscount);   //showing the property of the function
+        console.log(proDiscount()); //run the function
+
+
+        //JavaScript Object from a Class
+        class Product {
+            proName = "";
+            proPrice = 0;
+            proNumber = "";
+            proQuantity = 0;
+
+            constructor(){
+                //load the initial values into the properties of the new object
+                //DOES NOT make the new object, keyword 'new' makes a new object
+            }
+            //create setters - functions that put values into the properties of the object
+            //getters - return the values of a property within an object
+
+            set prodName(inName){
+                this.proName = inName;
+            }
+
+            get prodName(){
+                return this.proName;
+            }
+
+        }
+
+        let product1 = new Product() //create a new object called product1, using the variables in the class Product
+        console.log(product1);
+        produc1.prodName = "Red Stapler";
+        console.log(produc1.prodName);
+
+
+    </script>
+</head>
+<body>
+    <h1>WDV321 Adv JavaScript</h1>
+    <h2>Unit 4: Custom JavaScript Objects - Developer builds them</h2>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addCookie(tag, value) {
+            letexpireDate = new Date();
+            letexpireString = "";
+            expireDate.setTime(expireDate.getTime() + (1000 * 60 * 60 * 24 * 365));
+            expireString = "expires=" + expireDate.toGMTString();
+            document.cookie = tag + "=" + escape(value) + ";" + expireString + ";";
+        }
+
+        function getCookie(tag) {
+            letvalue = null;
+            letmyCookie = document.cookie + ";";
+            letfindTag = tag + "=";
+            letendPos;
+            if (myCookie.length > 0) {
+                letbeginPos = myCookie.indexOf(findTag);
+                if (beginPos != -1) {
+                    beginPos = beginPos + findTag.length;
+                    endPos = myCookie.indexOf(";", beginPos);
+                    if (endPos == -1)
+                        endPos = myCookie.length;
+                    value = unescape(myCookie.substring(beginPos, endPos));
+                }
+            }
+            return value;
+        }
+
+        function showCookie(){
+            alert(document.cookie);
+        }
+
+        console.log(getCookie("homePageVisitCounter"));
+
+        if (getCookie("homePageVisitCounter") == null) {
+            console.log("Cookie not Found");
+            addCookie("homePageVisitCounter", 1);
+        }
+        else {
+            console.log("Home Page Hit Counter is already in cookie");
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>
+        <button onclick="showCookie()">Show Cookies</button>
+    </p>
+
+</body>
+
+</html>

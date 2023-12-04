@@ -1,0 +1,19 @@
+{
+  "name": "mochaarraytest",
+  "version": "0.0.0",
+  "description": "First Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^6.2.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
+}

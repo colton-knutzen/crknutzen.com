@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pageLoad() {
+            let studentData = {
+                "Select a Student": null,
+                "Bryan Waters": "900006361.js",
+                "Jenny Myers": "900668871.js",
+                "Mark Kitterman": "903998004.js",
+            };
+            const studentSelect = document.getElementById("studentRecordSelect");
+
+            for (let studentName in studentData) {
+                let option = document.createElement("option");
+                option.value = studentData[studentName];
+                option.textContent = studentName;
+                studentSelect.appendChild(option);
+            }
+            studentSelect.addEventListener("change", () => getStudentRecord(studentSelect.value));
+        }
+
+        function getStudentRecord(fileURL) {
+            fetch(fileURL)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById("studentID").innerHTML = data.student_id;
+                    document.getElementById("studentFirstName").innerHTML = data.student_first_name;
+                    document.getElementById("studentLastName").innerHTML = data.student_last_name;
+                    document.getElementById("studentMajor").innerHTML = data.student_major;
+                    document.getElementById("studentCredits").innerHTML = data.student_credits;
+                    document.getElementById("studentGPA").innerHTML = data.student_gpa;
+                    document.getElementById("studentRegistration").innerHTML = data.student_registration_date;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+    </script>
+    <style>
+        .structure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .studentRecordLabel {
+            margin-bottom: 15px;
+            font-size: 19px;
+        }
+
+        table {
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px black solid;
+            padding: 8px;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="pageLoad()">
+    <h1>WDV321 Adv Javascript</h1>
+    <h2 style="margin-bottom: 50px;">7-2: AJAX Fetch API</h2>
+    <div class="structure">
+        <label class="studentRecordLabel" for="studentRecordSelect">What Student record would you like to
+            review?</label>
+        <select id="studentRecordSelect" name="studentRecordSelect"></select>
+
+        <table>
+            <tr>
+                <th>Student ID</td>
+                <td><span id="studentID">n/a</span></td>
+            </tr>
+            <tr>
+                <th>First Name</td>
+                <td><span id="studentFirstName">n/a</span></td>
+            </tr>
+            <tr>
+                <th>Last Name</td>
+                <td><span id="studentLastName">n/a</span></td>
+            </tr>
+            <tr>
+                <th>Major</td>
+                <td><span id="studentMajor">n/a</span></td>
+            </tr>
+            <tr>
+                <th>Credits</td>
+                <td><span id="studentCredits">n/a</span></td>
+            </tr>
+            <tr>
+                <th>GPA</td>
+                <td><span id="studentGPA">n/a</span></td>
+            </tr>
+            <tr>
+                <th>Registration<br> Date</td>
+                <td><span id="studentRegistration">n/a</span></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

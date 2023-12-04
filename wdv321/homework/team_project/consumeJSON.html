@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV321 Advanced Javascript - JSON</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="createJSON.js"></script>
+
+
+<!--
+    Instructions:
+    	1. Incorporate the createJSON.js file into this page as an external javascript file.
+        2. Access the JSON object in local storage and convert it into a Javascript object.
+        3. Use the information in the object to complete the student card.   
+
+		create three student objects: student 1, student 2, student 3--
+		store them in an array--
+		convert array to json object--
+		store them in local storage--
+		link createJSON.js in consumeJSON.html--
+		pull JSON object out of local storage--
+		convert back into javascript object--
+		use javascript to innerhtml the data of the objects into each of the three boxes
+-->
+
+<style>
+	.studentCard	{
+		width:200px;
+		box-sizing:border-box;
+		background-color:lightblue;
+		padding-left:5px;
+		padding-top:3px;
+		border:thin solid blue;
+		box-shadow: 2px 2px 2px grey;
+		margin-bottom: 50px;
+	}
+	
+	.studentCard h3	{
+		margin:0px;	
+	}
+
+	.container {
+		width: 1024px;
+		padding-left: auto;
+		padding-right: auto;
+	}
+
+</style>
+
+<script>
+
+	let studentsLocal = localStorage.getItem("students");
+	//console.log(studentsLocal);
+
+	let students = JSON.parse(studentsLocal);
+	//console.log(students);
+
+	let student1 = students[0];
+	//console.log(student1);
+	let student2 = students[1];
+	let student3 = students[2];
+
+	//console.log(student2, student3);
+	// function createNewStudentCard(inStudent){
+	// 	let studentCard = document.createElement("div");
+	// 	studentCard.classList.add("studentCard");
+	// 	console.log(studentCard);
+	// 	let studentCardH3 = document.createElement("h3");
+	// 	studentCardH3.innerHTML = "Student ID: " + inStudent[0];
+	// 	console.log(studentCardH3);
+	// }
+
+	// createNewStudentCard(student1);
+
+
+	function createNewStudentCard(inStudent){
+
+		let newDiv = document.createElement("div");
+		newDiv.classList.add("studentCard");
+		console.log(newDiv);
+
+		let newH3 = document.createElement("h3");
+		newH3.textContent = "Student ID: " + inStudent.student_id;
+		console.log(newH3);
+		newDiv.appendChild(newH3);
+
+		let newP = document.createElement("p");
+		newP.textContent = "Student GPA: " + inStudent.student_gpa;
+		newDiv.appendChild(newP);
+
+		let secondP = document.createElement("p");
+		secondP.textContent = "Student Courses:";
+		newDiv.appendChild(secondP);
+
+		newUL = document.createElement("ul");
+		inStudent.student_courses.forEach(function(course) { let li = document.createElement("li"); li.textContent = course; newUL.appendChild(li); });
+
+		secondP.appendChild(newUL);
+
+		document.body.appendChild(newDiv);
+
+	}
+
+	//throwing an error when i try this. let newH3 = document.createElement("h3"); newH3.textContent = "Student ID: " + inStudent.student_id; newDiv.appendChild(newH3);
+
+</script>
+</head>
+
+<body>
+
+
+	<div class="container">
+
+		<h1>WDV321 Advanced Javascript</h1>
+		<h2>Unit-8 JSON Objects</h2>
+		<h3>Creating and consuming a JSON object</h3>
+		<!-- <div class="studentCard">
+			<h3>Student ID:</h3>
+			<p>Student GPA:</p>
+			<p>Student Courses:
+				<ul>
+					 display the courses as list items
+				</ul>
+			</p>
+		</div> -->
+
+		<p>
+			<script>createNewStudentCard(student1);</script>
+		</p>
+		
+		<p>
+			<script>createNewStudentCard(student2);</script>
+		</p>
+		
+		<p>
+			<script>createNewStudentCard(student3);</script>
+		</p>
+
+	</div>
+</body>
+</html>

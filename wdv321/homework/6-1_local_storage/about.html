@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //check local storage for data object
+        //if no object, no userName
+            //create object
+            //display welcome and request for name input
+            //hide Hello and page counters
+
+        //if object, no userName
+            //hide Welcome
+            //hide Hello and page counters
+            //display Sorry and request name
+
+        //if no object, but userName
+            //not possible
+
+        //if object, and userName
+            //add one to homepage counter
+            //add one to site counter
+            //hide Welcome
+            //display Hello and page counters
+
+
+        //Dynamic content function. Displays 1 of 3 divs depending on the state of the pageCounter variable stored in local storage    
+        function pageDisplay(variableName) {
+            let pageCounter = JSON.parse(localStorage.getItem(variableName));
+
+            if (pageCounter === null) {
+                document.querySelector("#welcomeDiv").style.display = "block";
+                document.querySelector("#sorryDiv").style.display = "none";
+                document.querySelector("#counterDiv").style.display = "none";
+            }
+
+            else if (pageCounter.userName === "") {
+                document.querySelector("#welcomeDiv").style.display = "none";
+                document.querySelector("#sorryDiv").style.display = "block";
+                document.querySelector("#counterDiv").style.display = "none";
+            }
+
+            else {
+                document.querySelector("#welcomeDiv").style.display = "none";
+                document.querySelector("#sorryDiv").style.display = "none";
+                document.querySelector("#counterDiv").style.display = "block";
+            }
+        }
+
+        //Checks if a variable named whatever parameter is passed in (in this case pageCounter), is already in local storage. if not, creates one. if yes, adds one to the appropriate counter.
+        function getLocalStorage(variableName) {
+            if (localStorage.getItem(variableName) === null) {
+                const defaultPageCounter = {
+                    userName: "",
+                    homePageCounter: 1,
+                    aboutPageCounter: 0,
+                    sitePageCounter: 1
+                };
+
+                localStorage.setItem(variableName, JSON.stringify(defaultPageCounter)); //stores the object in local storage as a JSON object
+            }
+            else {
+                let pageCounter = JSON.parse(localStorage.getItem(variableName)); //retrives the JSON object from local storage as a javascript variable
+
+                pageCounter.aboutPageCounter++;
+                pageCounter.sitePageCounter++;
+
+                localStorage.setItem(variableName, JSON.stringify(pageCounter));
+            }
+        }
+
+        function pageSetup() {
+            pageDisplay('pageCounter');
+            getLocalStorage('pageCounter');
+
+
+            //adds event listeners to both submits buttons
+            document.querySelector("#welcomeSubmit").addEventListener("click", function () {
+                let nameInput = document.querySelector("#welcomeUserName");
+                let name = nameInput.value;
+
+                let pageCounter = JSON.parse(localStorage.getItem('pageCounter')); //retrieves pageCounter stored in local storage
+
+                pageCounter.userName = name; //replaces the value of userName with the text inputed by user
+
+                localStorage.setItem('pageCounter', JSON.stringify(pageCounter)); //stores updated pageCounter back in local storage
+
+                location.reload(); //reloads the page so user doesn't have to reload as well
+            });
+
+            document.querySelector("#sorrySubmit").addEventListener("click", function () {
+                let nameInput = document.querySelector("#sorryUserName");
+                let name = nameInput.value;
+
+                let pageCounter = JSON.parse(localStorage.getItem('pageCounter'));
+
+                pageCounter.userName = name;
+
+                localStorage.setItem('pageCounter', JSON.stringify(pageCounter));
+
+                location.reload();
+            });
+
+            //Clear local storage function
+            document.querySelector("#deleteLocalStorage").addEventListener("click", function () {
+                localStorage.clear();
+                location.reload();
+            });
+
+            //retrives the variable stored in local storage in a javascript variable
+            const pageCounter = JSON.parse(localStorage.getItem('pageCounter'));
+            console.log(pageCounter);
+
+
+            //Displays the values to the page
+            let userNameDisplay = document.getElementById('userNameDisplay');
+            userNameDisplay.textContent = pageCounter.userName;
+
+            let allPageCounterDisplay = document.getElementById('allPageCountersDisplay');
+            allPageCounterDisplay.textContent = pageCounter.sitePageCounter;
+
+            let aboutPageCounterDisplay = document.getElementById('aboutPageCounterDisplay');
+            aboutPageCounterDisplay.textContent = pageCounter.aboutPageCounter;
+        }
+    </script>
+</head>
+
+<body onload="pageSetup()">
+    <h1>WDV321: Advanced JavaScript</h1>
+    <h2>6-1: Demonstrate Local Storage</h2>
+
+    <div style="margin-top: 50px; text-align: center;">
+        <h1>About Page</h1>
+
+        <div id="welcomeDiv" style="display: none;">
+            <p><label for="welcomeUserName">Welcome! Would you please tell me who you are?</label></p>
+            <p><input type="text" id="welcomeUserName" name="welcomeUserName"></p>
+            <p><button type="button" id="welcomeSubmit">Submit</button></p>
+        </div>
+
+        <div id="sorryDiv" style="display: none;">
+            <p><label for="sorryUserName">I'm sorry, I don't know who you are. Would you please tell me?</label></p>
+            <p><input type="text" id="sorryUserName" name="sorryUserName"></p>
+            <p><button type="button" id="sorrySubmit">Submit</button></p>
+        </div>
+
+        <div id="counterDiv" style="display: none;">
+            <p>Hello <span id="userNameDisplay"></span></p>
+            <p>You've visited the about page <span id="aboutPageCounterDisplay"></span> times.</p>
+            <p>You've visited <span id="allPageCountersDisplay"></span> pages on this site.</p>
+        </div>
+
+        <p><a href="index.html">Homepage</a></p>
+
+        <p style="margin-top: 100px;"><button type="button" id="deleteLocalStorage">Delete Local Storage</button></p>
+    </div>
+</body>
+
+</html>

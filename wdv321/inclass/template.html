@@ -39,7 +39,10 @@
         function addWirelessMouse() {
             let temp = document.querySelector("#productTemplate");
             let newProductDiv = temp.content.cloneNode(true);
-            console.log(newProductDiv);
+            //console.log(newProductDiv);
+
+            newProductDiv.querySelector(".productDiv p").innerHTML = "Wireless Mouse";
+            newProductDiv.querySelector("p:nth-of-type(2)").innerHTML = "$24.59";
 
             let shoppingList = document.querySelector("#shoppingList");
             shoppingList.appendChild(newProductDiv);

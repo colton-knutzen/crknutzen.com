@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+let xmlString = `
+<Books>
+    <Book>
+        <ISBN>0-596-00016-2</ISBN>
+        <Title>Java and XML</Title>
+        <Price>39.95</Price>
+        <Publisher>O'Reilly &amp; Associates</Publisher>
+        <Authors>
+            <Author>
+                <Fname>Brett</Fname>
+                <Lname>McLaughlin</Lname>
+            </Author>
+        </Authors>
+        <Copyright>2000</Copyright>
+        <Comments/>
+    </Book>
+    <Book>
+        <ISBN>1-861003-32-3</ISBN>
+        <Title>Professional Visual Basic 6 XML</Title>
+        <Price>49.99</Price>
+        <Publisher>Wrox Press</Publisher>
+        <Authors>
+            <Author>
+                <Fname>James</Fname>
+                <Lname>Britt</Lname>
+            </Author>
+            <Author>
+                <Fname>Tuen</Fname>
+                <Lname>Duynstee</Lname>
+            </Author>
+        </Authors>
+        <Copyright>2000</Copyright>
+        <Comments/>
+    </Book>
+</Books>
+`;
+
+const parser = new DOMParser();
+const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+let books = xmlDoc.getElementsByTagName("Book");
+let jsJavaBook = createBookObject(books[0]);
+let jsVBBook = createBookObject(books[1]);
+
+console.log("jsJavaBook:", jsJavaBook);
+console.log("jsVBBook:", jsVBBook);
+
+function createBookObject(book) {
+    let isbn = book.getElementsByTagName("ISBN")[0].textContent;
+    let title = book.getElementsByTagName("Title")[0].textContent;
+    let price = parseFloat(book.getElementsByTagName("Price")[0].textContent);
+    let publisher = book.getElementsByTagName("Publisher")[0].textContent;
+    let authors = [];
+
+    let authorElements = book.getElementsByTagName("Author");
+    for (let j = 0; j < authorElements.length; j++) {
+        let authorElement = authorElements[j];
+        let fname = authorElement.getElementsByTagName("Fname")[0].textContent;
+        let lname = authorElement.getElementsByTagName("Lname")[0].textContent;
+        authors.push({ Fname: fname, Lname: lname });
+    }
+
+    let copyright = book.getElementsByTagName("Copyright")[0].textContent;
+
+    return {
+        ISBN: isbn,
+        Title: title,
+        Price: price,
+        Publisher: publisher,
+        Authors: authors,
+        Copyright: copyright,
+    };
+}
+
+let jsTextbooks = {
+  jsJavaBook: jsJavaBook,
+  jsVBBook: jsVBBook
+};
+
+console.log(jsTextbooks);
+
+let jsonJavaBook = JSON.stringify(jsJavaBook);
+let jsonVBBook = JSON.stringify(jsVBBook);
+let jsonTextBooks = JSON.stringify(jsTextbooks);
+
+console.log(jsonTextBooks);
+  </script>
+</head>
+
+<body>
+  <h1>WDV 321: Adv JavaScript</h1>
+  <h2>Unit 4-1: XML Parse & JavaScript Objects</h2>
+  <p>Use the attached XML file for this assignment as your source data.</p>
+
+  <p>Using a Javascript Object</p>
+
+  <ul>
+    <li>Create a Javascript object called jsJavaBook using the first <book> source file.</li>
+    <li>Create a javascript object called jsVBBook using the second <book> source file.</li>
+    <li>Create a javascript object called jsTextbooks that will contain the book objects.</li>
+  </ul>
+
+</body>
+
+</html>

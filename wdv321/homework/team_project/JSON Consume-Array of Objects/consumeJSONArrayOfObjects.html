@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV321 Advanced Javascript - JSON</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+<!--
+    
+    Instructions:
+    	1. Incorporate the createJSONArray.js file into this page as an external javascript file.
+        2. Access the JSON object in local storage and convert it into a javascript object.
+        3. Use the information in the object to complete a student card for EACH student object.
+        4. Account for the fact that there could be a random number of student objects. 
+        5. Use Jquery commands whenever possible.  
+-->
+<script src="createJSONArray.js"></script>
+
+<style>
+	.studentCard	{
+		width:200px;
+		box-sizing:border-box;
+		background-color:lightblue;
+		padding-left:5px;
+		padding-top:3px;
+		border:thin solid blue;
+		box-shadow: 2px 2px 2px grey;		
+	}
+	
+	.studentCard h3	{
+		margin:0px;	
+	}
+</style>
+
+<script>
+
+	let studentsJSON2 = localStorage.getItem("studentsData");
+	let studentsJava = JSON.parse(studentsJSON2);
+
+
+	function loopThoughStudentsJava() {
+
+		for (let x = 0; x < studentsJava.length; x++){
+
+			console.log(studentsJava[x].student_id);
+
+			let structureP = document.createElement("p");
+
+			let newDiv = document.createElement("div");
+			newDiv.classList.add("studentCard");
+			structureP.appendChild(newDiv);
+
+			let newH3 = document.createElement("h3");
+			newH3.textContent = "Student ID: " + studentsJava[x].student_id;
+			console.log(newH3);
+			newDiv.appendChild(newH3);
+
+			let newP = document.createElement("p");
+			newP.textContent = "Student GPA: " + studentsJava[x].student_gpa;
+			newDiv.appendChild(newP);
+
+			let secondP = document.createElement("p");
+			secondP.textContent = "Student Courses:";
+			newDiv.appendChild(secondP);
+
+			newUL = document.createElement("ul");
+			studentsJava[x].student_courses.forEach(function(course) { let li = document.createElement("li"); li.textContent = course; newUL.appendChild(li); });
+
+			secondP.appendChild(newUL);
+
+			document.body.appendChild(structureP);
+
+		}
+
+	}
+
+
+</script>
+
+</head>
+
+<body>
+	<h1>WDV321 Advanced Javascript</h1>
+    <h2>Unit-8 JSON Objects</h2>
+    <h3>Creating and consuming a JSON object</h3>
+
+	<script>
+		loopThoughStudentsJava();
+	</script>
+
+</body>
+</html>
