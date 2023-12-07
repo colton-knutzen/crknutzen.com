@@ -31,11 +31,11 @@ if (isset($_POST['submit'])) {
         $inIngredientDescription = $_POST['ingredientDescription'];
 
         //Name validation - accepts only letters
-        if (!preg_match('/^[A-Za-z]+$/', $inIngredientName)) {
+        if (!preg_match('/^[A-Za-z ]+$/', $inIngredientName)) {
             $invalidIngredientName = true;
             $proceedWithFormProcessing = false;
         };
-
+        
         //Description validation - accepts everything except { }. This is an attempt to prevent code from entering.
         if (strpbrk($inIngredientDescription, '{}') !== false) {
             $invalidIngredientDescription = true;

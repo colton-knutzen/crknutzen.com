@@ -72,10 +72,10 @@ if (isset($_POST['submit'])) {
 
         //Form Validation
         //Full Name/Username Validation - only accepts letters and numbers
-        if (!preg_match('/^[a-zA-Z0-9_]+$/', $inAuthorName)) {
+        if (!preg_match('/^[a-zA-Z0-9_\s]+$/', $inAuthorName)) {
             $invalidAuthorName = true;
             $proceedWithFormProcessing = false;
-        };
+        }
 
         //Email Validation - only accepts letters, numbers, -, _, @, and .
         if (!preg_match('/^[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/', $inAuthorEmail)) {

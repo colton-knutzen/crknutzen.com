@@ -4,10 +4,9 @@ session_start();
 //Anyone can view the login page, but if they are already logged in, it will display the loginMessage rather than the form. Prevents users from logging in twice or as dual accounts
 if (isset($_COOKIE['userLoggedIn']) && $_COOKIE['userLoggedIn'] == 'valid') {
     $loginMessage = true;
+} else {
+    $loginMessage = false;
 }
-
-//success submission message
-$loginMessage = false;
 
 //username and password don't match on the server
 $invalidLogin = false;
@@ -65,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 //Valid admin - also sets an adminLoggedIn cookie and session variable to valid
                 if ($user['user_role'] == 'admin') {
-                    setcookie('adminLoggedIn', 'valid', time() + 3600, '/'); // Cookie valid for 1 week
+                    setcookie('adminLoggedIn', 'valid', time() + (7 * 24 * 3600), '/'); // Cookie valid for 1 week
                     $_SESSION['adminLoggedIn'] = 'valid';
                 }
 
