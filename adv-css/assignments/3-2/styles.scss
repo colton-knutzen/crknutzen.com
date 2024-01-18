@@ -1,0 +1,69 @@
+$font-stack: Garmod, serif;
+$header-color: purple;
+$primary-background: lightblue;
+$secondary-background: beige;
+
+@mixin button {
+    background-color:#768d87;
+    border-radius:5px;
+    border:1px solid #566963;
+    display:inline-block;
+    color:#ffffff;
+    padding:11px 23px;
+    text-decoration:none;
+    margin: 10px;
+}
+
+@mixin head-foot {
+    width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: $secondary-background;
+    text-align: center;
+}
+
+body {
+    background-color: $primary-background;
+}
+
+header {
+    text-align: center;
+    font-family: $font-stack;
+    color: $header-color;
+}
+
+h2 {
+   
+    font-family: $font-stack;
+    color: $header-color;
+}
+
+nav {
+  @include head-foot()
+  }
+
+  .myButton {
+    @include button()
+}
+
+article {
+    width: 50%;
+    padding: 15px;
+    margin: 40px auto;
+    background-color: $secondary-background;
+    p {
+        text-indent: 50px;
+    }
+}
+
+footer {
+    @include head-foot
+}
+
+
+
+
+
+
+
+

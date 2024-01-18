@@ -1,0 +1,35 @@
+[   // id: 1,
+    // name: steak,
+    // description: piece of meat,
+    // img: image,
+    // prepTime: 15,
+    // cookTime: 10,
+    // servingSize: 6,
+    // calories: 125,
+    allergies: {
+        peanuts, 
+        milk, 
+        eggs
+        },
+    // author: jeff,
+    // dateEntered: 11/24/1992,
+    // dateModified: 11/12/2023,
+    ingredients: {
+        name: carrots,
+        description: hearty veggie,
+        quantity: 3,
+    }, 
+    {
+        name: potato,
+        description: hearty veggie,
+        quantity: 2,
+    },
+    step {
+        title: cut carrots,
+        description: cut the carrots into tiny pieces,
+    }
+    {
+        title: cut potatos,
+        description: cut the potatos into big pieces,
+    }
+]
