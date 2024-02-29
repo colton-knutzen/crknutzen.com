@@ -1,0 +1,106 @@
+/* CSS Document */
+/* This method of CSS Grid 6-column layout uses Grid Template Areas to define each areal. Based on a 6-column grid, the areas for each are named in the container CSS rul. The areas are then applied to the element CSS rules with the grid-area porperty.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E0CCB8;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "row row row row row row" "left main main main main right" "footer footer footer footer footer footer";
+  background-color: #E6D1B3;
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+  grid-area: header;
+  background-color: #CC8033;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 23px 23px 0 0;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #734C26;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.2em;
+}
+
+aside {
+  grid-area: left;
+  background-color: #50C7C7;
+  padding: 10px;
+  margin-right: 10px;
+  border-right: 1px solid black;
+}
+
+main {
+  grid-area: main;
+  background-color: #E6D1B3;
+  padding: 10px;
+}
+
+#rightcolumn {
+  grid-area: right;
+  background-color: #50C7C7;
+  padding: 10px;
+  margin-left: 10px;
+  border-left: 1px solid black;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  background-color: #734C26;
+  padding: 1.5em;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+#row {
+  grid-area: row;
+  background-color: #CC8033;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  margin: 0.3em 0.3em 1.5em 0.3em;
+}
+
+img[alt~=html] {
+  float: left;
+  margin: 0.5em;
+}
+
+img[alt~=css] {
+  float: right;
+  margin: 0.5em;
+}
+
+img[alt~=js] {
+  margin: 10px auto;
+}
+
+div > h4 {
+  clear: both;
+}/*# sourceMappingURL=styles.css.map */

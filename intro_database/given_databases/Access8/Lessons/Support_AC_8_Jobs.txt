@@ -1,0 +1,9 @@
+CompanyID	JobTitle	JobResponsibilities	StartingSalary
+1	Project Manager	The Project Manager must be experienced with and exceptional at organizing people into teams and activities into task schedules to effectively accomplish the goals of large IT and non-IT projects firm-wide.	65000
+3	Data Analytics Specialist	Collect and verify any and all data as it relates to project metrics.	52000
+5	Business Analyst	"Select, recommend and apply appropriate analytic and statistical methodologies and techniques to data."	55000
+10	Project Engineer	"Thoroughly understand and manage all project documents, including drawings, specifications, and addenda, people, and processes."	77000
+12	IT Manager	Oversees future planning and maintenance of entire computing environment along with core applications. Future planning is a collaboration of department managers and company executives to identify future goals and efficiencies that can be deployed.	78000
+15	Program Manager	"planning, executing and managing medium to large IT programs, leading with a high degree of influence, accountability, and autonomy, and focusing on maximum value delivery."	69000
+16	Office Manager	"Perform assignments in place of the Owner upon the Owners request, such as attending meetings in order to represent the Owner and/or gather information. Prepare written reports upon direction of the Owner."	51000
+26	Project Manager	"The Project Manager provides construction management of assigned projects within the  system, including coordinating all construction activity on these projects from programming and concept through occupant move-in."	66000

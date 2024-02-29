@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="IL_AC_8_JobsByState.xsd" generated="2024-02-26T17:16:00">
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Project Manager    </JobTitle>
+<StartingSalary>91000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Resource Manager</JobTitle>
+<StartingSalary>75000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Digital Service Software Engineer </JobTitle>
+<StartingSalary>81000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Data Analyst </JobTitle>
+<StartingSalary>85000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Program Coordinator</JobTitle>
+<StartingSalary>67000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Alabama</StateName>
+<City>Birmingham</City>
+<CompanyName>General Digital Inc</CompanyName>
+<JobTitle>Technology Support Specialist</JobTitle>
+<StartingSalary>52000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Arizona</StateName>
+<City>Scottsdale</City>
+<CompanyName>Bower Pet Hospital</CompanyName>
+<JobTitle>Practice Manager</JobTitle>
+<StartingSalary>59000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Arizona</StateName>
+<City>Scottsdale</City>
+<CompanyName>Bower Pet Hospital</CompanyName>
+<JobTitle>Client Service Coordinator</JobTitle>
+<StartingSalary>41000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Arkansas</StateName>
+<City>Little Rock</City>
+<CompanyName>Morris College</CompanyName>
+<JobTitle>Associate Director</JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Arkansas</StateName>
+<City>Little Rock</City>
+<CompanyName>Morris College</CompanyName>
+<JobTitle>Project Manager</JobTitle>
+<StartingSalary>66000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Colorado</StateName>
+<City>Denver</City>
+<CompanyName>Ozark College</CompanyName>
+<JobTitle>Financial Aid Assistant</JobTitle>
+<StartingSalary>45000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Florida</StateName>
+<City>Miami</City>
+<CompanyName>Sail Through</CompanyName>
+<JobTitle>Proposal Director </JobTitle>
+<StartingSalary>50000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Florida</StateName>
+<City>Orlando</City>
+<CompanyName>First Bank</CompanyName>
+<JobTitle>HR Coordinator  </JobTitle>
+<StartingSalary>61000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Florida</StateName>
+<City>Orlando</City>
+<CompanyName>First Bank</CompanyName>
+<JobTitle>IT Manager</JobTitle>
+<StartingSalary>78000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Georgia</StateName>
+<City>Atlanta</City>
+<CompanyName>ABA Solutions</CompanyName>
+<JobTitle>Project Manager</JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Georgia</StateName>
+<City>Atlanta</City>
+<CompanyName>ABA Solutions</CompanyName>
+<JobTitle>Project Manager</JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Creative Director</JobTitle>
+<StartingSalary>79000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Project Manager</JobTitle>
+<StartingSalary>52000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>PR Manager</JobTitle>
+<StartingSalary>87000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Social Advertising Marketing Manager</JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Acquisitions Editor</JobTitle>
+<StartingSalary>69000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Executive Assistant</JobTitle>
+<StartingSalary>49000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Studio Ops Specialist</JobTitle>
+<StartingSalary>50000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Illinois</StateName>
+<City>Chicago</City>
+<CompanyName>Artwell Corp</CompanyName>
+<JobTitle>Digital Photography Technician</JobTitle>
+<StartingSalary>51000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Iowa</StateName>
+<City>Des Moines</City>
+<CompanyName>Denman LLC</CompanyName>
+<JobTitle>Deloitte Services Development Manager</JobTitle>
+<StartingSalary>73000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Iowa</StateName>
+<City>Des Moines</City>
+<CompanyName>Denman LLC</CompanyName>
+<JobTitle>Channel Sales Manager</JobTitle>
+<StartingSalary>79000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Iowa</StateName>
+<City>Des Moines</City>
+<CompanyName>Denman LLC</CompanyName>
+<JobTitle>Pursuit Manager</JobTitle>
+<StartingSalary>74000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Iowa</StateName>
+<City>Des Moines</City>
+<CompanyName>Denman LLC</CompanyName>
+<JobTitle>Knowledge Services Communications Manager</JobTitle>
+<StartingSalary>88000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Kansas</StateName>
+<City>Wichita</City>
+<CompanyName>Airflow Manufacturing</CompanyName>
+<JobTitle>Aeronautical Engineer Associate</JobTitle>
+<StartingSalary>95000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Kansas</StateName>
+<City>Wichita</City>
+<CompanyName>Airflow Manufacturing</CompanyName>
+<JobTitle>Data Scientist</JobTitle>
+<StartingSalary>90000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Kansas</StateName>
+<City>Wichita</City>
+<CompanyName>Airflow Manufacturing</CompanyName>
+<JobTitle>Systems Engineer</JobTitle>
+<StartingSalary>92000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Maryland</StateName>
+<City>Baltimore</City>
+<CompanyName>AIT Group</CompanyName>
+<JobTitle>Data Analytics Specialist</JobTitle>
+<StartingSalary>52000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Maryland</StateName>
+<City>Baltimore</City>
+<CompanyName>AIT Group</CompanyName>
+<JobTitle>Microsoft PowerPoint specialist</JobTitle>
+<StartingSalary>49000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Massachusetts</StateName>
+<City>Boston</City>
+<CompanyName>Hystay Corp</CompanyName>
+<JobTitle>Claims Administrator </JobTitle>
+<StartingSalary>62000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Minnesota</StateName>
+<City>Minneapolis</City>
+<CompanyName>Infrawear Inc</CompanyName>
+<JobTitle>Project Coordinator </JobTitle>
+<StartingSalary>57000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Minnesota</StateName>
+<City>Minneapolis</City>
+<CompanyName>Infrawear Inc</CompanyName>
+<JobTitle>Security Analyst</JobTitle>
+<StartingSalary>92000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Missouri</StateName>
+<City>Kansas City</City>
+<CompanyName>Alark Inc</CompanyName>
+<JobTitle>Customer Service Representative</JobTitle>
+<StartingSalary>40000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Missouri</StateName>
+<City>Kansas City</City>
+<CompanyName>Alark Inc</CompanyName>
+<JobTitle>Business Analyst</JobTitle>
+<StartingSalary>55000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Missouri</StateName>
+<City>Kansas City</City>
+<CompanyName>Bank of the Midwest</CompanyName>
+<JobTitle>Registered Client Associate</JobTitle>
+<StartingSalary>35000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Missouri</StateName>
+<City>Kansas City</City>
+<CompanyName>Bank of the Midwest</CompanyName>
+<JobTitle>Executive Assistant</JobTitle>
+<StartingSalary>43900</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Missouri</StateName>
+<City>Springfield</City>
+<CompanyName>Mereweather Inc</CompanyName>
+<JobTitle>Workflow Manager of Resources</JobTitle>
+<StartingSalary>51000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Nebraska</StateName>
+<City>Omaha</City>
+<CompanyName>Cross Team</CompanyName>
+<JobTitle>Insights Analyst</JobTitle>
+<StartingSalary>77000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Nebraska</StateName>
+<City>Omaha</City>
+<CompanyName>Cross Team</CompanyName>
+<JobTitle>Direct Sales Representative</JobTitle>
+<StartingSalary>71000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Nebraska</StateName>
+<City>Omaha</City>
+<CompanyName>Cross Team</CompanyName>
+<JobTitle>Project Engineer</JobTitle>
+<StartingSalary>77000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Nebraska</StateName>
+<City>Omaha</City>
+<CompanyName>Cross Team</CompanyName>
+<JobTitle>Operations Coordinator</JobTitle>
+<StartingSalary>50000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Nevada</StateName>
+<City>Las Vegas</City>
+<CompanyName>Military Grade Steel</CompanyName>
+<JobTitle>Information Technology Specialist </JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>New York</StateName>
+<City>Albany</City>
+<CompanyName>Regex Corp</CompanyName>
+<JobTitle>Technology Quality Specialist</JobTitle>
+<StartingSalary>69000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>New York</StateName>
+<City>Albany</City>
+<CompanyName>Regex Corp</CompanyName>
+<JobTitle>Consultant, Data Management</JobTitle>
+<StartingSalary>73000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>New York</StateName>
+<City>Albany</City>
+<CompanyName>Regex Corp</CompanyName>
+<JobTitle>Manager of Training</JobTitle>
+<StartingSalary>72000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Marketing Specialist</JobTitle>
+<StartingSalary>72000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Territory Sales Manager</JobTitle>
+<StartingSalary>72000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Office Assistant</JobTitle>
+<StartingSalary>40000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Field Direct Fundraising Associate</JobTitle>
+<StartingSalary>49000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Program Manager</JobTitle>
+<StartingSalary>72000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Entry Level Graphic Design Specialist </JobTitle>
+<StartingSalary>55000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Digital Marketing Manager</JobTitle>
+<StartingSalary>70000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Carolina</StateName>
+<City>Raleigh</City>
+<CompanyName>Addcore Partners</CompanyName>
+<JobTitle>Event Sales Coordinator </JobTitle>
+<StartingSalary>48000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Dakota</StateName>
+<City>Minot</City>
+<CompanyName>US Insurance Company</CompanyName>
+<JobTitle>Product Director</JobTitle>
+<StartingSalary>78000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Dakota</StateName>
+<City>Minot</City>
+<CompanyName>US Insurance Company</CompanyName>
+<JobTitle>Sr. Application Developer</JobTitle>
+<StartingSalary>85000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Dakota</StateName>
+<City>Minot</City>
+<CompanyName>US Insurance Company</CompanyName>
+<JobTitle>Community Outreach and Engagement Specialist</JobTitle>
+<StartingSalary>77000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>North Dakota</StateName>
+<City>Minot</City>
+<CompanyName>US Insurance Company</CompanyName>
+<JobTitle>Associate Director</JobTitle>
+<StartingSalary>70000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Oklahoma</StateName>
+<City>Oklahoma City</City>
+<CompanyName>Core Systems</CompanyName>
+<JobTitle>Communications Manager</JobTitle>
+<StartingSalary>57000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Oklahoma</StateName>
+<City>Oklahoma City</City>
+<CompanyName>Core Systems</CompanyName>
+<JobTitle>Event Manager </JobTitle>
+<StartingSalary>54000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Oklahoma</StateName>
+<City>Oklahoma City</City>
+<CompanyName>Core Systems</CompanyName>
+<JobTitle>Computer Support Specialist</JobTitle>
+<StartingSalary>51000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>South Carolina</StateName>
+<City>Charleston</City>
+<CompanyName>Accent Group</CompanyName>
+<JobTitle>Client Product Support Associate</JobTitle>
+<StartingSalary>72000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>South Carolina</StateName>
+<City>Charleston</City>
+<CompanyName>Accent Group</CompanyName>
+<JobTitle>Operations Project Specialist</JobTitle>
+<StartingSalary>69000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>South Carolina</StateName>
+<City>Charleston</City>
+<CompanyName>Accent Group</CompanyName>
+<JobTitle>Customer Service</JobTitle>
+<StartingSalary>65000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Memphis</City>
+<CompanyName>Navigational Systems</CompanyName>
+<JobTitle>Admissions Coordinator</JobTitle>
+<StartingSalary>81000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Memphis</City>
+<CompanyName>Navigational Systems</CompanyName>
+<JobTitle>Managing Consultant</JobTitle>
+<StartingSalary>92000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Memphis</City>
+<CompanyName>Navigational Systems</CompanyName>
+<JobTitle>Market Intelligence Coordinator</JobTitle>
+<StartingSalary>86000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Memphis</City>
+<CompanyName>Navigational Systems</CompanyName>
+<JobTitle>Director - Intellectual Property</JobTitle>
+<StartingSalary>85000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Nashville</City>
+<CompanyName>Learning Well Group</CompanyName>
+<JobTitle>Office Manager</JobTitle>
+<StartingSalary>51000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Tennessee</StateName>
+<City>Nashville</City>
+<CompanyName>Learning Well Group</CompanyName>
+<JobTitle>Education Specialist </JobTitle>
+<StartingSalary>70000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Austin</City>
+<CompanyName>Hire Talent LLC</CompanyName>
+<JobTitle>Program Manager</JobTitle>
+<StartingSalary>69000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Austin</City>
+<CompanyName>Hire Talent LLC</CompanyName>
+<JobTitle>Recruiter</JobTitle>
+<StartingSalary>66000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Assistant Director of Parks and Recreation</JobTitle>
+<StartingSalary>74000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Planner of Historic Preservation</JobTitle>
+<StartingSalary>51000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Accounting Specialist of Finance</JobTitle>
+<StartingSalary>52000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Communications Manager</JobTitle>
+<StartingSalary>81000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Development officer </JobTitle>
+<StartingSalary>55000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Environmental Health Specialist</JobTitle>
+<StartingSalary>62000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Graphic Designer</JobTitle>
+<StartingSalary>61000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Johnson County Chemicals</CompanyName>
+<JobTitle>Business Development Manager</JobTitle>
+<StartingSalary>75000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Wellman Bank</CompanyName>
+<JobTitle>Digital Marketing Consultant</JobTitle>
+<StartingSalary>68000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Texas</StateName>
+<City>Houston</City>
+<CompanyName>Wellman Bank</CompanyName>
+<JobTitle>Analytic Consultant</JobTitle>
+<StartingSalary>85000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Wisconsin</StateName>
+<City>Madison</City>
+<CompanyName>CellFirst Inc</CompanyName>
+<JobTitle>Threat Monitoring Analyst
+</JobTitle>
+<StartingSalary>79000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Wisconsin</StateName>
+<City>Madison</City>
+<CompanyName>CellFirst Inc</CompanyName>
+<JobTitle>Business Sales Account Executive</JobTitle>
+<StartingSalary>69000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Wisconsin</StateName>
+<City>Madison</City>
+<CompanyName>CellFirst Inc</CompanyName>
+<JobTitle>Proposal Writer</JobTitle>
+<StartingSalary>71000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Wisconsin</StateName>
+<City>Madison</City>
+<CompanyName>CellFirst Inc</CompanyName>
+<JobTitle>Marketing Project Manager</JobTitle>
+<StartingSalary>74000</StartingSalary>
+</JobsByState>
+<JobsByState>
+<StateName>Wisconsin</StateName>
+<City>Madison</City>
+<CompanyName>CellFirst Inc</CompanyName>
+<JobTitle>Associate Engineer</JobTitle>
+<StartingSalary>70000</StartingSalary>
+</JobsByState>
+</dataroot>

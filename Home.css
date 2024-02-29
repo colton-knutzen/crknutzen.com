@@ -353,10 +353,6 @@ a:hover {
   margin: -300px 332px 0 auto;
 }
 
-.u-section-2 .u-container-layout-4 {
-  padding-bottom: 18px;
-}
-
 .u-section-2 .u-group-elements-4 {
   width: 172px;
   min-height: 258px;
@@ -847,7 +843,7 @@ a:hover {
 
 .u-section-5 .u-group-1 {
   width: 230px;
-  min-height: 300px;
+  min-height: 325px;
   height: auto;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   margin: 54px auto 60px;

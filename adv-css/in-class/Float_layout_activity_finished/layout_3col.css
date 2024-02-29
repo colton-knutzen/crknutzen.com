@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2e2d0;
+}
+
+#container {
+  width: 1000px;
+  background-color: #d9d9d9;
+  border: 2px solid black;
+  margin: 10px auto;
+  border-radius: 25px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #087436;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 23px 23px 0 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.2em;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+aside {
+  background-color: #ffa64d;
+  width: 200px;
+  height: 450px;
+  padding: 1.5em;
+  float: left;
+}
+
+main {
+  background-color: #B4B2C6;
+  width: 575px;
+  height: 450px;
+  padding: 1.5em;
+  margin-left: 0.5em;
+  float: left;
+}
+
+main > h4 {
+  clear: both;
+}
+
+section {
+  background-color: #ffa64d;
+  width: 200px;
+  height: 450px;
+  padding: 1.5em;
+  float: right;
+}
+
+img[alt~=symbol] {
+  float: right;
+  padding: 1.5em;
+  overflow: auto;
+}
+
+img[alt~=css] {
+  float: left;
+  padding: 1.5em;
+  overflow: auto;
+}
+
+footer {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  text-align: left;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  clear: both;
+  overflow: auto;
+  /* The clear property clears all floats. It is necessary to force the footer to the bottom. Otherwise the space between the columns are green. Comment out the clear property to see the effect. The overflow property is the clearfix hack - it allows the image to be contained in the footer. */
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  section {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=layout_3col.css.map */

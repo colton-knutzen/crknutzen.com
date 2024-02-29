@@ -1,0 +1,6 @@
+LastName	FirstName	Department	Salary	Dependents
+Rockwell	Collin	Information Systems	80000	3
+Ruan	Sergio	Information Systems	81000	2
+Perez	Ronald	Information Systems	79000	2
+Ngyen	Thomas	Information Systems	79000	1
+Adams	Kelsey	Information Systems	81000	1

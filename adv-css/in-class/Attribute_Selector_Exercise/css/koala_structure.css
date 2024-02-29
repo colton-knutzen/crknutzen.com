@@ -1,0 +1,42 @@
+/*This is the structure for the Koala site*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+	
+#container {
+			width:963px;
+			margin:10px auto;
+			border-radius:25px;
+			background-color:white;
+			border:2px solid black;
+		}
+		
+header img {
+		margin-top:0;
+		border-top-left-radius:25px;
+		border-top-right-radius:25px;
+			}
+			
+main  {
+		padding:10px;
+		}
+		
+footer  {
+		background-color:black;
+		text-align:center;
+		border-bottom-left-radius:23px;
+		border-bottom-right-radius:23px;
+			clear:both;
+
+		}
+		
+footer p{
+		color:lightgray;
+		background-color:black;
+		text-align:center;
+	
+		
+		}

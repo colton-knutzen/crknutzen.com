@@ -1,0 +1,76 @@
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", Ariel, sans-serif;
+  font-size: 110%;
+  background-color: #E6D1B3;
+}
+
+#formcontainer {
+  background-color: #b7e5f7;
+  width: 70%;
+  margin: 10px auto;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+legend {
+  width: 100%;
+  border-bottom: 2px dotted purple;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+legend + p {
+  margin: 16px auto;
+}
+
+label {
+  text-align: right;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+input, textarea, select {
+  font-size: 0.8em;
+  padding: 2px 5px 4px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 2px solid #9c9c9c;
+}
+
+form button {
+  background: #CC8033;
+  border: 2px black solid;
+  padding: 0.7em;
+  border: 1px groove black;
+  border-radius: 5px;
+  margin: 0.7em;
+}
+
+button {
+  border: 2px solid black;
+  width: 100px;
+}
+
+form button:hover {
+  background: #F2800D;
+}
+
+button[title~=submit] {
+  margin-left: 300px;
+}/*# sourceMappingURL=styles.css.map */
